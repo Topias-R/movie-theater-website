@@ -15,3 +15,15 @@ function toggleSelection(e) {
   );
   seatsList.replaceChildren(...chosenSeats);
 }
+
+function openTrailer() {
+  document.getElementById("trailer1").style.display = "block";
+  document.getElementById("button1").style.display = "none";
+  document.getElementById("buttonClose1").style.display = "block";
+}
+
+function closeTrailer() {
+  document.getElementById("trailer1").style.display = "none";
+  document.getElementById("button1").style.display = "block";
+  document.getElementById("buttonClose1").style.display = "none";
+}
