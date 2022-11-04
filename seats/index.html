@@ -1,15 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <script
+      src="https://kit.fontawesome.com/ec32ed19cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Choose movie</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+  <body>
+    <section class="container">
+      <nav class="header">
+        <img
+          class="menuImg"
+          src="https://i.pinimg.com/originals/ee/c0/71/eec071442e9a1b8e017c5a7c1853b880.jpg"
+          alt=""
+        />
+        <ul class="menu">
+          <li><a href="">Choose movies</a></li>
+          <li><a href="">All movies</a></li>
+          <li><a href="">Coming New</a></li>
+          <li><a href="">Tickets</a></li>
+          <li><a href="">About us</a></li>
+        </ul>
+      </nav>
 
-<body>
+      <section class="title">
+        <hr />
+        <h1 id="title">Valitse paikat</h1>
+        <hr />
+      </section>
 
-</body>
+      <section class="seat-selection">
+        <section class="movie-info">
+          <img src="../img/movie1.jpeg" />
+          <section class="movie-title">
+            <h1>Black Adam</h1>
+          </section>
+          <hr />
+          <section class="movie-info-item">
+            <p>
+              Tiedot: <br />
+              <br />
+              Ensi-ilta: 21.10.2022 <br />
+              <br />
 
+              Kesto: 2 t 5 min <br />
+              <br />
+
+              Levittäjä: Warner Bros. Finland Oy <br />
+              <br />
+
+              Ohjaaja: Jaume Collet-Serra <br />
+              <br />
+
+              Pääosissa: Dwayne Johnson, Aldis Hodge, Noah Centineo, Sarah
+              Shahi, Marwan Kenzari, Pierce Brosnan
+            </p>
+          </section>
+          <hr />
+          <section class="movie-info-item">
+            <p>
+              Maailma tarvitsi sankarin, se sai Black Adamin. <br />
+              <br />
+              New Line Cinema tuo valkokankaille Dwayne Johnsonin tähdittämän
+              toimintaseikkailun Black Adam. Jauem Collet-Serra (Jungle Cruise)
+              on ohjannut ensimmäisen DC-supersankari Black Adamista kertovan
+              elokuvan, joka nähdään pian elokuvateattereissa. <br />
+              <br />
+
+              Melkein 5000 vuotta sen jälkeen, kun hänelle suotiin muinaisten
+              jumalten voimat ja hänet vangittiin, Black Adam (Johnson)
+              vapautetaan maallisesta haudastaan, ja hän on valmis jakamaan
+              nykymaailmalle oikeutta omaan tyyliinsä. <br />
+              <br />
+
+              Yhdessä Johnsonin kanssa elokuvassa nähdään Aldis Hodgen (City on
+              a Hill, One Night in Miami) Hawkmanina, Noah Centineo (To all the
+              Boys I’ve Loved Before) Atom Smasherina, Sarah Shahi (Sex/Life,
+              Rush Hour 3) Adriannana, Marwan Kenzari (Idän pikajunan arvoitus,
+              Muumio) Ishmaelina, Quintessa Swindell (Voyagers, Trinkets)
+              Cyclonena, Bodhi Sabongui (A Million Little Things) Amonina ja
+              Pierce Brosnan (Mamma Mia! ja James Bond -elokuvat) Dr. Fatena.
+            </p>
+          </section>
+        </section>
+        <section class="seats" onclick="toggleSelection(event)">
+          <span class="seat reserved-seat" data-column="1" data-row="1"></span
+          ><span class="seat reserved-seat" data-column="2" data-row="1"></span
+          ><span class="seat" data-column="3" data-row="1"></span
+          ><span class="seat" data-column="4" data-row="1"></span
+          ><span class="seat" data-column="5" data-row="1"></span
+          ><span class="seat" data-column="6" data-row="1"></span
+          ><span class="seat" data-column="1" data-row="2"></span
+          ><span class="seat" data-column="2" data-row="2"></span
+          ><span class="seat" data-column="3" data-row="2"></span
+          ><span class="seat reserved-seat" data-column="4" data-row="2"></span
+          ><span class="seat reserved-seat" data-column="5" data-row="2"></span
+          ><span class="seat" data-column="6" data-row="2"></span
+          ><span class="seat" data-column="1" data-row="3"></span
+          ><span class="seat" data-column="2" data-row="3"></span
+          ><span class="seat reserved-seat" data-column="3" data-row="3"></span
+          ><span class="seat" data-column="4" data-row="3"></span
+          ><span class="seat" data-column="5" data-row="3"></span
+          ><span class="seat" data-column="6" data-row="3"></span
+          ><span class="seat" data-column="1" data-row="4"></span
+          ><span class="seat" data-column="2" data-row="4"></span
+          ><span class="seat" data-column="3" data-row="4"></span
+          ><span class="seat reserved-seat" data-column="4" data-row="4"></span
+          ><span class="seat" data-column="5" data-row="4"></span
+          ><span class="seat" data-column="6" data-row="4"></span
+          ><span class="seat" data-column="1" data-row="5"></span
+          ><span class="seat" data-column="2" data-row="5"></span
+          ><span class="seat" data-column="3" data-row="5"></span
+          ><span class="seat" data-column="4" data-row="5"></span
+          ><span class="seat reserved-seat" data-column="5" data-row="5"></span
+          ><span class="seat" data-column="6" data-row="5"></span
+          ><span class="seat reserved-seat" data-column="1" data-row="6"></span
+          ><span class="seat" data-column="2" data-row="6"></span
+          ><span class="seat" data-column="3" data-row="6"></span
+          ><span class="seat" data-column="4" data-row="6"></span
+          ><span class="seat reserved-seat" data-column="5" data-row="6"></span
+          ><span class="seat" data-column="6" data-row="6"></span>
+        </section>
+
+        <section class="seat-info">
+          <h3>Valitut paikat</h3>
+          <hr />
+          <ul class="seats-list"></ul>
+          <hr />
+          <button class="buy-button">Osta</button>
+        </section>
+      </section>
+      <hr />
+
+      <footer class="footer">
+        <section class="teaterista">
+          <h3>Teaterista</h3>
+          <ul class="teateristaUl">
+            <li><a href="">Teatterit</a></li>
+            <li><a href="">Yrityksille</a></li>
+            <li><a href="">Työpaikat</a></li>
+            <li><a href="">Oiva-raportit</a></li>
+            <li><a href="">Yhteiskuntavastuu</a></li>
+          </ul>
+        </section>
+
+        <section class="linkki">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-regular fa-envelope"></i>
+        </section>
+
+        <section class="asiakaspalvelu">
+          <h3>Asiakaspalvelu</h3>
+          <ul class="asiakaspalveluUl">
+            <li><a href="">Ota yhteyttä</a></li>
+            <li><a href="">Usein kysyttyä</a></li>
+            <li><a href="">Maksaminen ja maksutavat</a></li>
+            <li><a href="">Elokuvapaneeli</a></li>
+          </ul>
+        </section>
+      </footer>
+    </section>
+    <script src="./script.js"></script>
+  </body>
 </html>

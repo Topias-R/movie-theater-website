@@ -1,0 +1,174 @@
+body {
+  background-color: black;
+}
+
+.seat-selection {
+  display: grid;
+  grid-template-columns: 250px 1fr 250px;
+  grid-template-rows: 1fr;
+  margin: 2rem auto;
+}
+
+.seats {
+  display: grid;
+  grid-template-columns: repeat(6, min-content);
+  grid-template-rows: repeat(6, min-content);
+  gap: 1px 1px;
+  justify-self: center;
+  background-color: gray;
+  height: min-content;
+}
+
+.seat {
+  border: 4px solid black;
+  height: 50px;
+  width: 50px;
+  background-color: green;
+}
+
+.seat.chosen-seat {
+  background-color: yellow;
+}
+
+.seat.reserved-seat {
+  background-color: red;
+}
+
+.seats-list {
+  list-style: square;
+  list-style-position: inside;
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  font-family: Poppins;
+}
+
+.menuImg {
+  width: 3%;
+  height: 3%;
+}
+
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+}
+
+.menu li {
+  list-style-type: none;
+  margin: 0 3%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  display: flex;
+}
+
+.title > * {
+  flex-grow: 1;
+}
+
+#title {
+  font-size: 2rem;
+  color: blueviolet;
+  text-align: center;
+}
+
+.buy-button {
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin: 1rem;
+  margin-left: 0;
+}
+
+.movie-title {
+  display: flex;
+}
+
+.movie-info {
+  width: 100%;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+}
+
+.movie-info h1 {
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.movie-info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-info-item > * {
+  flex-basis: 50%;
+  padding: 1rem;
+}
+
+hr {
+  background-color: white;
+}
+
+.footer {
+  margin-top: 2rem;
+  display: flex;
+  font-size: 1rem;
+  color: gray;
+}
+
+.footer > * {
+  flex-grow: 1;
+}
+
+.footer a {
+  font-size: 1rem;
+  color: gray;
+}
+
+.footer i {
+  padding-right: 50px;
+}
+
+.footer h3 {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.teaterista,
+.linkki,
+.asiakaspalvelu {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.linkki {
+  font-size: 1.5rem;
+}
