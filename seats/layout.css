@@ -124,7 +124,6 @@ a {
 
 .movie-info-item {
   display: flex;
-  flex-direction: column;
 }
 
 .movie-info-item > * {
