@@ -1,24 +1,18 @@
 document.addEventListener("DOMContentLoaded", function(){
     let sliderPosition = 0;
     const sliderTrack = document.getElementById("slider-track");
-    const sliderTrackWidth = 1000; 
     const sliderButtonPrev = document.getElementById("Prev");
     const sliderButtonNext = document.getElementById("Next");
 
+
     sliderButtonPrev.addEventListener("click", () => {
         sliderPosition += 250;
-        if (sliderPosition > 0) {
-            sliderPosition = 0;
-        }
        sliderTrack.style.marginLeft=sliderPosition+"px";
         sliderButtons();
     });
 
     sliderButtonNext.addEventListener("click", () => {
         sliderPosition -= 250;
-        if (sliderPosition < -500) {
-            sliderPosition = -500;
-        }
        sliderTrack.style.marginLeft=sliderPosition+"px";
        sliderButtons();
     });
@@ -54,6 +48,20 @@ function showInfo(whichmovie) {
     document.getElementById("trailer5").style.display="none";
     document.getElementById("trailer6").style.display="none";
 
+    document.getElementById("buttonClose1").style.display="none";
+    document.getElementById("buttonClose2").style.display="none";
+    document.getElementById("buttonClose3").style.display="none";
+    document.getElementById("buttonClose4").style.display="none";
+    document.getElementById("buttonClose5").style.display="none";
+    document.getElementById("buttonClose6").style.display="none";
+
+    document.getElementById("button1").style.display="block";
+    document.getElementById("button2").style.display="block";
+    document.getElementById("button3").style.display="block";
+    document.getElementById("button4").style.display="block";
+    document.getElementById("button5").style.display="block";
+    document.getElementById("button6").style.display="block";
+
     if (numberMovie==1) {
         document.getElementById("movie-info-1").style.display="block";
     }
@@ -73,6 +81,11 @@ function showInfo(whichmovie) {
         document.getElementById("movie-info-6").style.display="block";
     }
 
+}
+
+function ShowInfo(whichMovie) {
+    let numberMovie = whichmovie.getAttribute("id");
+    let arrayMovie= document.querySelectorAll("")
 }
 
 function Trailer(whichTrailer) {
@@ -145,3 +158,24 @@ function VaindaMainosImg() {
     setTimeout(VaindaMainosImg, 7000)
 }
 VaindaMainosImg();
+let clickmäärä=0;
+function ShowMenu() {
+    if (window.screen.width>426) {
+        document.getElementById("menu").style.display="flex";
+        document.getElementById("header").style.display="flex";    
+    }
+   
+    if (window.screen.width<=426) {
+        clickmäärä++;
+        if (clickmäärä%2!=0) {
+            document.getElementById("menu").style.display="block";
+            document.getElementById("header").style.display="block";
+            document.getElementById("header").style.textAlign="center";
+        }
+        else{
+            document.getElementById("menu").style.display="none";
+        }
+    
+    }
+}
+

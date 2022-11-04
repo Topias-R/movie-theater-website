@@ -1,0 +1,142 @@
+body{
+    background-color: black;
+}
+.container{
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Poppins;
+}
+
+.menuImg{
+    width: 3%;
+    height: 3%;
+}
+
+.header{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+}
+
+.menu li{
+    list-style-type: none;
+    margin: 0 3%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+.footer{
+    margin-top: 2rem;
+    display: flex;
+    font-size: 1rem;
+    color: gray;
+}
+
+.footer > *
+{
+    flex-grow: 1;
+}
+
+.footer a{
+    font-size: 1rem;
+    color: gray;
+}
+
+.footer i{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.footer h3{
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.teaterista, .linkki, .asiakaspalvelu{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.linkki{
+    font-size: 1.5rem;
+}
+
+
+@media only screen and (max-width: 1250px) {
+    .container{
+        width: 90%;
+    }
+    
+    .menuImg{
+        width: 4%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
+    
+    .menuImg{
+        width: 4%;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .container{
+        width: 90%;
+    }
+
+    .menu{
+        display: none;
+        font-size: 0.8rem;
+    }
+
+    .menuImg{
+        width: 15%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer{
+        display: block;
+    }
+
+    .footer a{
+        font-size: 0.8rem;
+    }
+
+    .linkki{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer h3{
+        font-size: 0.8rem;
+    }
+}
+
