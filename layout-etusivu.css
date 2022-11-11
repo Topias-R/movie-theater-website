@@ -184,11 +184,26 @@ figure img {
 /* eka boksi leffeteatterin nimi ja logo */
 .box1
 {
-    border: solid 1px rgb(255, 255, 255);
+    border: solid 1px white;
     border-radius: 20px 20px 20px 20px;
-    background-color: #530669;
+  /* background-color: #530669; */
     color: white;
+    background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(0.5, rgb(84, 6, 105)),
+	color-stop(0.8, rgb(0, 0, 0))
+);
+background-image: -o-linear-gradient(bottom, rgb(84, 6, 105) 50%, rgb(0, 0, 0) 80%);
+background-image: -moz-linear-gradient(bottom, rgb(84, 6, 105) 50%, rgb(0, 0, 0) 80%);
+background-image: -webkit-linear-gradient(bottom, rgb(84, 6, 105) 50%, rgb(0, 0, 0) 80%);
+background-image: -ms-linear-gradient(bottom, rgb(84, 6, 105) 50%, rgb(0, 0, 0) 80%);
+background-image: linear-gradient(to bottom, rgb(84, 6, 105) 50%, rgb(0, 0, 0) 80%);
+}
 
+.box1:hover {
+    border: dashed 1px fuchsia;
 }
 
 /* tänään choose movie box */
@@ -199,15 +214,21 @@ figure img {
     background-color: rgb(71, 187, 187);
     color: black;
 }
+.box2:hover {
+    border: dashed 1px fuchsia;
+}
 
 /* all movies boxi */
 
 .box3
 {
-    border: solid 1px rgba(240, 46, 170);
+    border: solid 1px rgb(255, 255, 255);
     border-radius: 20px 20px 20px 20px;
     background-color: black;
     color: white;
+}
+.box3:hover {
+    border: dashed 1px fuchsia;
 }
 
 /* the lost king box */
@@ -217,29 +238,41 @@ figure img {
     border-radius: 20px 20px 20px 20px;
     background-color: #530669;
 }
+.box4:hover {
+    border: dashed 1px fuchsia;
+}
 
 /* jaws boxi */
 .box5
 {
-    border: solid 1px rgba(240, 46, 170);
+    border: solid 1px rgb(255, 255, 255);
     border-radius: 20px 20px 20px 20px;
     background-color: black;
+}
+.box5:hover {
+    border: dashed 1px fuchsia;
 }
 
 /* 6 */
 .box6
 {
-    border: solid 1px rgba(240, 46, 170);
+    border: solid 1px rgb(255, 255, 255);
     border-radius: 20px 20px 20px 20px;
     background-color: black;
 }
+.box6:hover {
+    border: dashed 1px fuchsia;
+}
 
-/* movie #4 box */
+/* movie box */
 .box7
 {
     border: solid 1px rgb(255, 255, 255);
     border-radius: 20px 20px 20px 20px;
     background-color: #530669;
+}
+.box7:hover {
+    border: dashed 1px fuchsia;
 }
 
 /* movie 5#  */
@@ -250,24 +283,57 @@ figure img {
     background-color: rgb(71, 187, 187);
     color: black;
 }
+.box8:hover {
+    border: dashed 1px fuchsia;
+}
 
 
 /* about us boxi */
 .box9
 {
-    border: solid 1px rgba(240, 46, 170);
+    border: solid 1px rgb(255, 255, 255);
     border-radius: 20px 20px 20px 20px;
-    background-color: black;
+    /*background-color: black;*/
     color: white;
+    background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(0.5, rgb(84, 6, 105)),
+	color-stop(0.8, rgb(0, 0, 0))
+);
+background-image: -o-linear-gradient(bottom, rgb(84, 6, 105) 50%, rgb(0, 0, 0) 80%);
+background-image: -moz-linear-gradient(bottom, rgb(84, 6, 105) 50%, rgb(0, 0, 0) 80%);
+background-image: -webkit-linear-gradient(bottom, rgb(84, 6, 105) 50%, rgb(0, 0, 0) 80%);
+background-image: -ms-linear-gradient(bottom, rgb(84, 6, 105) 50%, rgb(0, 0, 0) 80%);
+background-image: linear-gradient(to bottom, rgb(84, 6, 105) 50%, rgb(0, 0, 0) 80%);
+}
+.box9:hover {
+    border: dashed 1px fuchsia;
 }
 
 /* coming new box */
 .box10
 {
-    border: solid 1px black;
+    border: solid 1px rgb(255, 255, 255);
     border-radius: 20px 20px 20px 20px;
-    background-color: rgba(240, 46, 170);
-    color: black;
+   /* background-color: rgba(240, 46, 170); */
+    color: white;
+    background-image: -webkit-gradient(
+	linear,
+	right top,
+	right bottom,
+	color-stop(0.2, rgb(240, 46, 169)),
+	color-stop(0.8, rgb(0, 0, 0))
+);
+background-image: -o-linear-gradient(bottom, rgb(240, 46, 169) 20%, rgb(0, 0, 0) 80%);
+background-image: -moz-linear-gradient(bottom, rgb(240, 46, 169) 20%, rgb(0, 0, 0) 80%);
+background-image: -webkit-linear-gradient(bottom, rgb(240, 46, 169) 20%, rgb(0, 0, 0) 80%);
+background-image: -ms-linear-gradient(bottom, rgb(240, 46, 169) 20%, rgb(0, 0, 0) 80%);
+background-image: linear-gradient(to bottom, rgb(240, 46, 169) 20%, rgb(0, 0, 0) 80%);
+}
+.box10:hover {
+    border: dashed 1px fuchsia;
 }
 
 
@@ -275,10 +341,27 @@ figure img {
 
 .box11
 {
-    border: solid 1px black;
+    border: solid 1px rgb(255, 255, 255);
     border-radius: 20px 20px 20px 20px;
     background-color: rgba(240, 46, 170);
     color: black;
+
+    background-image: -webkit-gradient(
+        linear,
+        right top,
+        right bottom,
+        color-stop(0.2, rgb(240, 46, 169)),
+        color-stop(0.8, rgb(0, 0, 0))
+    );
+    background-image: -o-linear-gradient(bottom, rgb(240, 46, 169) 20%, rgb(0, 0, 0) 80%);
+    background-image: -moz-linear-gradient(bottom, rgb(240, 46, 169) 20%, rgb(0, 0, 0) 80%);
+    background-image: -webkit-linear-gradient(bottom, rgb(240, 46, 169) 20%, rgb(0, 0, 0) 80%);
+    background-image: -ms-linear-gradient(bottom, rgb(240, 46, 169) 20%, rgb(0, 0, 0) 80%);
+    background-image: linear-gradient(to bottom, rgb(240, 46, 169) 20%, rgb(0, 0, 0) 80%);
+    
+}
+.box11:hover {
+    border: dashed 1px fuchsia;
 }
 
 .box12
@@ -287,7 +370,9 @@ figure img {
     border-radius: 20px 20px 20px 20px;
     background-color: #530669;
 }
-
+.box12:hover {
+    border: dashed 1px fuchsia;
+}
 
 
 
