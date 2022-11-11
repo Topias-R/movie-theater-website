@@ -3,22 +3,40 @@ document.addEventListener("DOMContentLoaded", function(){
     const sliderTrack = document.getElementById("slider-track");
     const sliderButtonPrev = document.getElementById("Prev");
     const sliderButtonNext = document.getElementById("Next");
+    let sliderImgWidth=250;
+    let sliderTrackWidthStop=500;
 
+    if (window.screen.width<=1024) {
+        sliderImgWidth=235;
+        sliderTrackWidthStop=705;
+    }
+    if (window.screen.width<=768) {
+        sliderImgWidth=203;
+        sliderTrackWidthStop=609;
+    }
+    if (window.screen.width<=768) {
+        sliderImgWidth=203;
+        sliderTrackWidthStop=609;
+    }
+    if (window.screen.width<=425) {
+        sliderImgWidth=170;
+        sliderTrackWidthStop=680;
+    }
 
     sliderButtonPrev.addEventListener("click", () => {
-        sliderPosition += 250;
+        sliderPosition += sliderImgWidth;
        sliderTrack.style.marginLeft=sliderPosition+"px";
         sliderButtons();
     });
 
     sliderButtonNext.addEventListener("click", () => {
-        sliderPosition -= 250;
+        sliderPosition -= sliderImgWidth;
        sliderTrack.style.marginLeft=sliderPosition+"px";
        sliderButtons();
     });
 
     const sliderButtons = () => {
-        if (sliderPosition == -500) {
+        if (sliderPosition == -sliderTrackWidthStop) {
             sliderButtonNext.style.display="none"
         } else {
             sliderButtonNext.style.display="block"
@@ -177,5 +195,5 @@ function ShowMenu() {
         }
     
     }
-}
 
+}

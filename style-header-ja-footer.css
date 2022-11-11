@@ -11,10 +11,18 @@ body{
     font-family: Poppins;
 }
 
-.menuImg{
-    width: 3%;
-    height: 3%;
+.menuImg:hover{
+    color: blueviolet;
 }
+
+.menu li:hover{
+    cursor: pointer;
+}
+
+.menu a:hover{
+    color: blueviolet;
+}
+
 
 .header{
     display: flex;
@@ -64,6 +72,16 @@ a{
     color: gray;
 }
 
+.footer li:hover{
+    cursor: pointer;
+}
+
+.footer a:hover{
+    color: blueviolet;
+}
+
+
+
 .footer i{
     padding-right: 25px;
     padding-left: 25px;
@@ -89,20 +107,11 @@ a{
     .container{
         width: 90%;
     }
-    
-    .menuImg{
-        width: 4%;
-    }
-
 }
 
 @media only screen and (max-width: 768px) {
     .container{
         width: 90%;
-    }
-    
-    .menuImg{
-        width: 4%;
     }
 }
 
@@ -117,7 +126,6 @@ a{
     }
 
     .menuImg{
-        width: 15%;
         margin-left: auto;
         margin-right: auto;
     }
