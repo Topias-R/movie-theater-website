@@ -14,17 +14,22 @@ body {
 .container{
     width: 80%;
     margin-left:auto;
-    margin-right: auto; 
+    margin-right: auto;
     background-color: black;
+    color: white;
+    font-size: 1.5rem;
     font-family: Poppins;
-    
-   
+}
+.menuImg:hover{
+    color: blueviolet;
+}
+.menu li:hover{
+    cursor: pointer;
+}
+.menu a:hover{
+    color: blueviolet;
 }
 
-.menuImg{
-    width: 3%;
-    height: 3%;
-}
 
 .header{
     display: flex;
@@ -38,16 +43,12 @@ body {
 .ylalinks {
     
     font-size: 2.2rem;
-    text-decoration: none;
-    
-    
+    text-decoration: none;   
 }
-
 .menu{
     display: flex;
     width: 100%;
 }
-
 .menu li{
     list-style-type: none;
     margin: 0 3%;
@@ -484,6 +485,8 @@ p {
     body {
       background-color:black;
     }
+
+    .menuImg { display: none;}
    
 
     /*
@@ -529,6 +532,7 @@ p {
     body {
       background-color: black;
     }
+    .menuImg { display: none;}
 
          /* tässä menee boxit 4 vierekkäin desktopipissa */
 
@@ -537,7 +541,7 @@ p {
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, 28vw);
             grid-gap: 1.5rem; 
-            width: 75%;
+            width: 82%;
             margin: 2rem auto; 
           }
           .kuva {
@@ -552,8 +556,7 @@ p {
 
  /* FOOTER */
  
- 
-.footer{
+ .footer{
     margin-top: 2rem;
     display: flex;
     font-size: 1rem;
@@ -569,6 +572,16 @@ p {
     font-size: 1rem;
     color: gray;
 }
+
+.footer li:hover{
+    cursor: pointer;
+}
+
+.footer a:hover{
+    color: blueviolet;
+}
+
+
 
 .footer i{
     padding-right: 25px;
@@ -595,20 +608,11 @@ p {
     .container{
         width: 90%;
     }
-    
-    .menuImg{
-        width: 4%;
-    }
-
 }
 
 @media only screen and (max-width: 768px) {
     .container{
         width: 90%;
-    }
-    
-    .menuImg{
-        width: 4%;
     }
 }
 
@@ -623,7 +627,6 @@ p {
     }
 
     .menuImg{
-        width: 15%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -645,4 +648,3 @@ p {
         font-size: 0.8rem;
     }
 }
-
