@@ -11,19 +11,46 @@ body {
 
 .seats {
   display: grid;
-  grid-template-columns: repeat(6, min-content);
-  grid-template-rows: repeat(6, min-content);
+  grid-template-columns: repeat(6, 2rem);
+  grid-template-rows: repeat(6, 2rem);
   gap: 1px 1px;
   justify-self: center;
   background-color: gray;
   height: min-content;
 }
 
-.seat {
+input[type="checkbox"] + span {
+}
+
+input[type="checkbox"] + span:before {
+  content: "";
+  display: block;
   border: 4px solid black;
-  height: 50px;
-  width: 50px;
+  height: 2rem;
+  width: 2rem;
   background-color: green;
+}
+
+input[type="checkbox"]:checked + span:before {
+  background-color: yellow;
+}
+
+input[type="checkbox"]:focus + span:before {
+  outline: 2px dotted #aaa;
+}
+
+input[type="checkbox"]:disabled + span {
+  background-color: red;
+}
+
+input[type="checkbox"]:not(:disabled) + span:hover:before {
+  text-shadow: 0 1px 2px #77f;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
 }
 
 .seat.chosen-seat {
