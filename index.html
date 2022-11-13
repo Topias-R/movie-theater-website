@@ -17,21 +17,51 @@
 </head>
 <body>
 
+
     <section class="wrapper">
+
+
 
         <section class="container">
             <nav class="header" id="header">
                 
-                <i class="fa-solid fa-bars menuImg" onclick="ShowMenu()"></i>
-               <ul class="menu" id="menu">
+               
+            <!--    <i class="fa-solid fa-bars menuImg" onclick="ShowMenu()"></i> -->
+                 <!-- HAMBURGER MENY-->
+                <!-- Simulate a smartphone / tablet -->
 
+                <section class="mobile-container">
+                    <!-- Top Navigation Menu -->
+                    <section class="topnav">
+                      
+                      <section id="myLinks">
+                        <a href="./movies/index.html" class="ylalinks">Choose movies</a>
+                        <a href="" class="ylalinks">All movies</a>
+                        <a href="" class="ylalinks">Coming New</a>
+                        <a href="" class="ylalinks">Tickets</a>
+                        <a href="./aboutus/index.html" class="ylalinks">About us</a>
+
+                      </section>
+                      <a href="javascript:void(0);" class="icon" onclick="ShowMenu()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                    </section>
+                </section>
+            <!-- HAMBURGER MENY END-->
+     
+
+               <ul class="menu" id="menu">
+ 
+                
                     <li><a href="./movies/index.html" class="ylalinks">Choose movies</a></li>
                     <li><a href="" class="ylalinks">All movies</a></li>
                     <li><a href="" class="ylalinks">Coming New</a></li>
                     <li><a href="" class="ylalinks">Tickets</a></li>
-                    <li><a href="" class="ylalinks">About us</a></li>
+                    <li><a href="./aboutus/index.html" class="ylalinks">About us</a></li>
+
 
                 </ul>
+               
             </nav>
         </section>
 
@@ -41,9 +71,9 @@
 
 
             <section class="box1">
-                <h4>Box 1</h4>
+                
                 <figure class="kuva">
-                    <img src="./img/image-1.jpg" alt="kuva">
+                    <img src="./img/logotemp.png" alt="kuva">
                     <h3>Leffateatteri</h3>
                     <p>Nimi</p>
                     <p>Logo</p>
@@ -282,7 +312,6 @@
     
     </footer>
     </section>
-   
-    
+    <script src="./script-etusivu.js"></script>
 </body>
 </html>

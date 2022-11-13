@@ -38,12 +38,12 @@ body {
     padding-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    font-size: xx-large;
 }
-
 .ylalinks {
     
     font-size: 2.2rem;
-    text-decoration: none;   
+    text-decoration: none;  
 }
 .menu{
     display: flex;
@@ -53,6 +53,32 @@ body {
     list-style-type: none;
     margin: 0 3%;
 }
+
+/*Hambuurger Menu*/
+
+.topnav #myLinks {
+    display: none;
+  }
+
+
+  .topnav a {
+   
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  /* Add a grey blueviolet color on mouse-over */
+.topnav a:hover {
+    background-color: blueviolet;
+    color: black;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+  }
 
 
 
@@ -102,6 +128,8 @@ a:hover {
     padding-top: 7px;
     border: 1px solid rgb(0, 0, 0);
 }
+
+
 h1{
     color: antiquewhite;
 }
@@ -140,7 +168,7 @@ figure img {
     padding: 0.1rem;
     padding-top: 0.4rem;
     padding-bottom: 0.1rem;
-    
+    border-radius: 10px 10px 5px 5px;   
 }
 
 /* Boxit */
@@ -151,7 +179,9 @@ figure img {
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 1.8rem;
-    padding: 2px;
+    padding: 5px;
+   
+    
   /* border: solid 1px black; */ 
 }
 
@@ -174,8 +204,7 @@ figure img {
 }
 .boxes-header > * {
     flex-basis: 0px;
-    flex-grow: 1;
-    
+    flex-grow: 1; 
 }
 
 .ikarajat {
@@ -486,8 +515,9 @@ p {
       background-color:black;
     }
 
-    .menuImg { display: none;}
-   
+    .topnav a {
+        display: none;
+      }
 
     /*
     .boxes {
@@ -532,7 +562,14 @@ p {
     body {
       background-color: black;
     }
-    .menuImg { display: none;}
+
+
+
+
+   
+
+    
+   
 
          /* tässä menee boxit 4 vierekkäin desktopipissa */
 
@@ -541,8 +578,10 @@ p {
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, 28vw);
             grid-gap: 1.5rem; 
-            width: 82%;
-            margin: 2rem auto; 
+            width: 80%;
+            /*margin: 2rem auto; */
+            margin-left: 5%;
+            
           }
           .kuva {
             width: 100%;
@@ -558,6 +597,7 @@ p {
  
  .footer{
     margin-top: 2rem;
+    margin-right: 5%;
     display: flex;
     font-size: 1rem;
     color: gray;
