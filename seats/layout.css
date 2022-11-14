@@ -1,0 +1,299 @@
+body {
+  background-color: black;
+}
+
+.seat-selection {
+  display: grid;
+  grid-template-columns: 250px 1fr 250px;
+  grid-template-rows: 1fr;
+  margin: 2rem auto;
+}
+
+.seats {
+  display: grid;
+  grid-template-columns: repeat(6, 2rem);
+  grid-template-rows: repeat(6, 2rem);
+  gap: 1px 1px;
+  justify-self: center;
+  background-color: gray;
+  height: min-content;
+}
+
+input[type="checkbox"] + span {
+}
+
+input[type="checkbox"] + span:before {
+  content: "";
+  display: block;
+  border: 4px solid black;
+  height: 2rem;
+  width: 2rem;
+  background-color: green;
+}
+
+input[type="checkbox"]:checked + span:before {
+  background-color: yellow;
+}
+
+input[type="checkbox"]:focus + span:before {
+  outline: 2px dotted #aaa;
+}
+
+input[type="checkbox"]:disabled + span {
+  background-color: red;
+}
+
+input[type="checkbox"]:not(:disabled) + span:hover:before {
+  text-shadow: 0 1px 2px #77f;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.seat.chosen-seat {
+  background-color: yellow;
+}
+
+.seat.reserved-seat {
+  background-color: red;
+}
+
+.seats-list {
+  list-style: square;
+  list-style-position: inside;
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.title {
+  display: flex;
+}
+
+.title > * {
+  flex-grow: 1;
+}
+
+#title {
+  font-size: 2rem;
+  color: blueviolet;
+  text-align: center;
+}
+
+.buy-button {
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin: 1rem;
+  margin-left: 0;
+}
+
+.movie-title {
+  display: flex;
+}
+
+.movie-info {
+  width: 100%;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+}
+
+.movie-info h1 {
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.movie-info-item {
+  display: flex;
+}
+
+.movie-info-item > * {
+  flex-basis: 50%;
+  padding: 1rem;
+}
+
+hr {
+  background-color: white;
+}
+
+.btn {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 0.5rem;
+  color: black;
+  padding: 10px;
+  margin: 1rem;
+}
+
+.btnClose {
+  display: none;
+}
+
+.video {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+}
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  font-family: Poppins;
+}
+
+.menuImg:hover {
+  color: blueviolet;
+}
+
+.menu li:hover {
+  cursor: pointer;
+}
+
+.menu a:hover {
+  color: blueviolet;
+}
+
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+}
+
+.menu li {
+  list-style-type: none;
+  margin: 0 3%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  margin-top: 2rem;
+  display: flex;
+  font-size: 1rem;
+  color: gray;
+}
+
+.footer > * {
+  flex-grow: 1;
+}
+
+.footer a {
+  font-size: 1rem;
+  color: gray;
+}
+
+.footer li:hover {
+  cursor: pointer;
+}
+
+.footer a:hover {
+  color: blueviolet;
+}
+
+.footer i {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.footer h3 {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.teaterista,
+.linkki,
+.asiakaspalvelu {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.linkki {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1250px) {
+  .seat-selection {
+    display: grid;
+    grid-template-rows: max-content max-content;
+    grid-template-columns: 1fr;
+    margin: 2rem auto;
+  }
+
+  .movie-image {
+    display: none;
+  }
+
+  .seat-info {
+    margin-top: 2rem;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .container {
+    width: 90%;
+  }
+
+  .menu {
+    display: none;
+    font-size: 0.8rem;
+  }
+
+  .menuImg {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .footer a {
+    font-size: 0.8rem;
+  }
+
+  .linkki {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer h3 {
+    font-size: 0.8rem;
+  }
+}
