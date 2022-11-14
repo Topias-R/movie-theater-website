@@ -21,13 +21,9 @@
 
   <body>
     <section class="container">
-      <nav class="header">
-        <img
-          class="menuImg"
-          src="https://i.pinimg.com/originals/ee/c0/71/eec071442e9a1b8e017c5a7c1853b880.jpg"
-          alt=""
-        />
-        <ul class="menu">
+      <nav class="header" id="header">
+        <i class="fa-solid fa-bars menuImg" onclick="ShowMenu()"></i>
+        <ul class="menu" id="menu">
           <li><a href="">Choose movies</a></li>
           <li><a href="">All movies</a></li>
           <li><a href="">Coming New</a></li>
@@ -43,7 +39,7 @@
       </section>
 
       <section class="seat-selection">
-        <img src="../img/movie1.jpeg" />
+        <img class="movie-image" src="../img/movie1.jpeg" />
         <form class="seats" onclick="toggleSelection(event)">
           <label><input type="checkbox" value="0" /><span></span></label>
           <label><input type="checkbox" value="1" /><span></span></label>
