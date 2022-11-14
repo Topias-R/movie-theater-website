@@ -68,45 +68,6 @@ input[type="checkbox"] {
   overflow-y: scroll;
 }
 
-.container {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: black;
-  color: white;
-  font-size: 1.5rem;
-  font-family: Poppins;
-}
-
-.menuImg {
-  width: 3%;
-  height: 3%;
-}
-
-.header {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.menu {
-  display: flex;
-  width: 100%;
-}
-
-.menu li {
-  list-style-type: none;
-  margin: 0 3%;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
 .title {
   display: flex;
 }
@@ -162,32 +123,6 @@ hr {
   background-color: white;
 }
 
-.footer {
-  margin-top: 2rem;
-  display: flex;
-  font-size: 1rem;
-  color: gray;
-}
-
-.footer > * {
-  flex-grow: 1;
-}
-
-.footer a {
-  font-size: 1rem;
-  color: gray;
-}
-
-.footer i {
-  padding-right: 50px;
-}
-
-.footer h3 {
-  font-size: 1.2rem;
-  color: white;
-  margin-bottom: 0.5rem;
-}
-
 .btn {
   border: 1px solid black;
   background-color: white;
@@ -206,17 +141,6 @@ hr {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
-
-.teaterista,
-.linkki,
-.asiakaspalvelu {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.linkki {
-  font-size: 1.5rem;
 }
 
 body {
