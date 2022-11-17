@@ -46,8 +46,7 @@ inputNumber.forEach(function(item){
   item.insertAdjacentHTML('beforebegin', '<button type="button" class="minus-button"><img src="../svg/svg-minus.svg"></button>');
   item.insertAdjacentHTML('afterend', '<button type="button" class="plus-button"><img src="../svg/svg-plus.svg"></button>');
 });
-
-// Minus Button
+// Plus Button
 const plusButton = document.querySelectorAll(".plus-button");
 plusButton.forEach(function(btn) {
   btn.addEventListener('click', function(element){
@@ -69,6 +68,16 @@ minusButton.forEach(function(btn) {
     let change = new Event("change");
     inputNumber.dispatchEvent(change);
   })
+
+
+
+
 })
 
 
+function FuncTotal() {
+  var x = document.getElementById("lippucount");
+  var currentVal = x.value;
+  document.getElementById("output").innerHTML = "Olet ostamassa: " + currentVal
+  + " kappaletta lippuja." + " Lippusi maksavat yhteensä: " + currentVal * 15 + " euroa.";
+      }
