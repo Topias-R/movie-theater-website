@@ -1,0 +1,226 @@
+#title{
+    font-size:2rem;
+    color: blueviolet;
+    text-align: center;
+}
+
+.title{
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.title > *{
+    flex-grow: 1;
+}
+
+hr{
+    background-color:  white;
+}
+
+.allmovies{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-areas: 
+    "one two three" 
+    "four five six" 
+    "seven eight nine"
+    ;
+}
+
+.allmovies img, .sarjat img{
+    width: 100%;
+    height: 100%;
+}
+
+.buttonReadMore, .katso{
+    position: absolute;
+    width: 90%;
+    padding: 1rem;
+    padding-top: 70%;
+    padding-bottom: 70%;
+    font-size: 1.4rem;
+    text-align: center;
+    opacity: 0;
+    text-shadow: 0 0 10px blueviolet,0 0 20px blueviolet,0 0 30px blueviolet,0 0 40px blueviolet;
+}
+
+.buttonReadMore:hover, .katso:hover{
+    opacity: 1;
+}
+
+.one{
+    grid-area: one;
+    position: relative;
+}
+
+.two{
+    grid-area: two;
+    position: relative;
+}
+
+.three{
+    grid-area: three;
+    position: relative;
+}
+
+.four{
+    grid-area: four;
+    position: relative;
+}
+
+.five{
+    grid-area: five;
+    position: relative;
+}
+
+.six{
+    grid-area: six;
+    position: relative;
+}
+
+.seven{
+    grid-area: seven;
+    position: relative;
+}
+
+.eight{
+    grid-area: eight;
+    position: relative;
+}
+
+.nine{
+    grid-area: nine;
+    position: relative;
+}
+
+.filter{
+    display: block; 
+    font-size: 14px;  
+    font-weight: 500; 
+    color: white; 
+    line-height: 1; 
+    border: 1px solid black;
+    padding: .6em 1.4em .5em .8em; width: 100%; 
+    max-width: 10%; 
+    box-sizing: border-box; 
+    margin: 0; 
+    border-radius: .5em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, blueviolet 0%,blue 100%); 
+    background-repeat: no-repeat, repeat;
+    appearance: none;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%; 
+}
+
+.sarjat{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-areas: 
+    "one two three four" 
+    "five six seven eight" 
+    "nine ten eleven twelve"
+    ;
+    position: relative;
+}
+
+.sarja-item{
+    position: relative;
+}
+
+.one-sarja{
+    grid-area: one;
+}
+
+.two-sarja{
+    grid-area: two;
+}
+
+.three-sarja{
+    grid-area: three;
+}
+
+.four-sarja{
+    grid-area: four;
+}
+
+.five-sarja{
+    grid-area: five;
+}
+
+.six-sarja{
+    grid-area: six;
+}
+
+.seven-sarja{
+    grid-area: seven;
+}
+
+.eight-sarja{
+    grid-area: eight;
+}
+
+.nine-sarja{
+    grid-area: nine;
+}
+
+.ten-sarja{
+    grid-area: ten;
+}
+
+.eleven-sarja{
+    grid-area: eleven;
+}
+
+.twelve-sarja{
+    grid-area: twelve;
+}
+
+.sarja-box{
+    position: absolute;
+    margin-top: -60%;
+    margin-left: 7%;
+    display: none;
+}
+
+.closeSarja{
+    padding: 0.7rem;
+    font-size: 1rem;
+    background-color: blueviolet;
+    border-radius: 5rem;
+    color: white;
+}
+
+.fa-solid{
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 426px) {
+    .sarjat{
+    
+        grid-template-areas: 
+        "one two three" 
+        "four five six" 
+        "seven eight nine" 
+        "ten eleven twelve"
+        ;
+    }
+    
+    .buttonReadMore{
+        font-size: 0.7rem;
+        margin-left: 4%;
+    }
+
+    .filter{
+        max-width: 20%;
+        font-size: 0.7rem;
+    }
+}
