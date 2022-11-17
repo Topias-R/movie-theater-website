@@ -31,7 +31,7 @@
         </nav>
 
      <section class="ticket-osto">
-        <h1 class="hooyks">Osta lippuja!</h1>
+        <h1 class="hooyks">Osta lippuja </h1>
         <p class="fontti">Ostamalla liput etukäteen annamme alennuksen loppusummasta. Saat liput kätevästi matkapuhelimeesi ja sähköpostiisi. Meille käy Smartumin kulttuurisetelit.
             Osta liput verkkopalvelustamme säästät aikaa ja pääset ilman ruuhkia kävelemään suoraan näytökseen!
         </p>
@@ -51,8 +51,7 @@
 
         <article class="ticket-info">
 
-            <p class="fontti">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure id maxime iste quod quisquam iusto enim animi debitis, 
-                autem natus praesentium neque dolores perspiciatis </p>
+            <p class="fontti">Lippujemme hinnat ja lisätiedot </p>
 
             <table id="lippu-infotaulu">
                 <tr>
@@ -61,7 +60,11 @@
                 </tr>
                 <tr>
                     <td>Hinta teatterissa</td>
-                    <td>18 € / kappale</td>
+                    <td>17 € / kappale</td>
+                  </tr>
+                  <tr>
+                    <td>Kanta-asiakas (-20%)</td>
+                    <td>13,60 € / kappale</td>
                   </tr>
 
 
@@ -87,14 +90,23 @@
 
             
             <p class="alert fontti">Toimi nopeasti! Aikaa ostoksesi tekemiseen on <span id="timer"></span> minuuttia.</p>
-            <p class="fontti">Myymme lippuja max. 5 kpl per asiakas!</p>
+            <p class="fontti">Myymme lippuja etukäteen max. 5 kpl per asiakas!</p>
             
             <section class="lippu-osto">
-            <input type="number" min="1" max="5" step="1" value="1">
-            <button class="button">Osta <i class="fa-solid fa-arrow-right-long"></i></button>  
+            <input type="number" min="1" max="5" step="1" value="1" id="lippucount" onchange="FuncTotal()">
+            <button class="button" >Osta <i class="fa-solid fa-arrow-right-long"></i></button>  
             </section>
 
-            <p class="fontti">Liity kanta-asiakkaaksi tästä ></p>
+
+            <p class="fontti">
+                <span id="output"></span>
+                 </p>
+
+            <p class="fontti"><a href="">Liity kanta-asiakkaaksi <i class="fa-solid fa-arrow-right-long"></i></a></p>
+
+            
+        
+
             
 
 

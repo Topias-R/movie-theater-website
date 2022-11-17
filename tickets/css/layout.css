@@ -63,11 +63,20 @@ a{
     color: white;
 }
 
+a:hover{
+    color: blueviolet;
+}
+
 /*SISÄLTÖ*/
+
+.ticket-osto {
+    padding-bottom: 3%;
+}
 
 .hooyks {
     font-size: 2.3rem;
     color: fuchsia;
+    padding-bottom: 1%;
 }
 
 h2 {
@@ -76,7 +85,7 @@ h2 {
 }
 
 .fontti {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 8px;
 }
 
@@ -160,7 +169,7 @@ figure img {
     display: flex;
     justify-content: space-between;
     background: white;
-    border: 1px solid fuchsia;
+    border: 1px solid rgba(240, 46, 170, 0.8);
     height: 60px;
     width:180px;
     color: black;
@@ -187,13 +196,9 @@ figure img {
 
   .quantity-buttons button:hover {background-color: rgba(240, 46, 170, 0.8);}
 
-
-
-
-/* buttonit keskialueella joissa harmaa tausta */
 .button {
     cursor: pointer;
-    border: 1px solid fuchsia;
+    border: 1px solid rgba(240, 46, 170, 0.8);
     background-color: transparent;
     height: 60px;
     width: 120px;
@@ -205,12 +210,10 @@ figure img {
 }
 .button:hover{
     background-color: rgba(240, 46, 170, 0.8);
+    color: black;
 }
 
-  /* buttonien sisällä olevat nuolet oikeaan reunaan*/
-  .fa-solid {
-    float: right;
-  }
+
 
 
 
@@ -274,29 +277,6 @@ figure img {
 
 
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*FOOTER*/
