@@ -41,6 +41,7 @@ body{
 .menu li{
     list-style-type: none;
     margin: 0 3%;
+    text-align: center;
 }
 
 a{
@@ -72,11 +73,11 @@ a{
     color: gray;
 }
 
-.footer li:hover{
+.footer li:hover, .footer i:hover{
     cursor: pointer;
 }
 
-.footer a:hover{
+.footer a:hover, .footer i:hover{
     color: blueviolet;
 }
 
