@@ -101,11 +101,6 @@ function showInfo(whichmovie) {
 
 }
 
-function ShowInfo(whichMovie) {
-    let numberMovie = whichmovie.getAttribute("id");
-    let arrayMovie= document.querySelectorAll("")
-}
-
 function Trailer(whichTrailer) {
     let number=whichTrailer.getAttribute("id");
 
@@ -176,6 +171,8 @@ function VaindaMainosImg() {
     setTimeout(VaindaMainosImg, 7000)
 }
 VaindaMainosImg();
+
+
 let clickmäärä=0;
 function ShowMenu() {
     if (window.screen.width>426) {
