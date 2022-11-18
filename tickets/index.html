@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="https://kit.fontawesome.com/ec32ed19cd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Tickets</title>
+</head>
+<body>
+
+
+
+    <section class="container">
+        <nav class="header" id="header">
+           <img class="menuImg" src="https://i.pinimg.com/originals/ee/c0/71/eec071442e9a1b8e017c5a7c1853b880.jpg" onclick="ShowMenu()" alt="">
+            <ul class="menu" id="menu">
+                <li><a href="../movies/index.html">Choose movies</a></li>
+                <li><a href="../shows/index.html">All movies</a></li>
+                <li><a href="">Coming New</a></li>
+                <li><a href="../tickets/index.html">Tickets</a></li>
+                <li><a href="../aboutus/index.html">About us</a></li>
+            </ul>
+        </nav>
+
+     <section class="ticket-osto">
+        <h1 class="hooyks">Osta lippuja </h1>
+        <p class="fontti">Ostamalla liput etukäteen annamme alennuksen loppusummasta. Saat liput kätevästi matkapuhelimeesi ja sähköpostiisi. Meille käy Smartumin kulttuurisetelit.
+            Osta liput verkkopalvelustamme säästät aikaa ja pääset ilman ruuhkia kävelemään suoraan näytökseen!
+        </p>
+     </section>
+
+
+     <section class="ticket-ostosalue">
+
+        <article class="ticket-kuva">
+
+            <figure class="kuva">
+                <img src="../img/tickets.jpg" alt="kuva">
+            </figure>
+  
+
+        </article>
+
+        <article class="ticket-info">
+
+            <p class="fontti">Lippujemme hinnat ja lisätiedot </p>
+
+            <table id="lippu-infotaulu">
+                <tr>
+                  <td>Hinta verkossa</td>
+                  <td>15 € / kappale</td>
+                </tr>
+                <tr>
+                    <td>Hinta teatterissa</td>
+                    <td>17 € / kappale</td>
+                  </tr>
+                  <tr>
+                    <td>Kanta-asiakas (-20%)</td>
+                    <td>13,60 € / kappale</td>
+                  </tr>
+
+
+                <tr>
+                    <td>Voimassa</td>
+                    <td>12 kuukautta</td>
+                  </tr>
+                  <tr>
+                    <td>e-lippu</td>
+                    <td>Kyllä</td>
+                  </tr>
+                  <tr>
+                    <td>Palautusoikeus</td>
+                    <td>Ei</td>
+                  </tr>
+
+
+             </table>   
+
+        </article>
+
+        <article class="ticket-transaktio">
+
+            
+            <p class="alert fontti">Toimi nopeasti! Aikaa ostoksesi tekemiseen on <span id="timer"></span> minuuttia.</p>
+            <p class="fontti">Myymme lippuja etukäteen max. 5 kpl per asiakas!</p>
+            
+            <section class="lippu-osto">
+            <input type="number" min="1" max="5" step="1" value="1" id="lippucount" onchange="FuncTotal()">
+            <button class="button" >Osta <i class="fa-solid fa-arrow-right-long"></i></button>  
+            </section>
+
+
+            <p class="fontti">
+                <span id="output"></span>
+                 </p>
+
+            <p class="fontti"><a href="">Liity kanta-asiakkaaksi <i class="fa-solid fa-arrow-right-long"></i></a></p>
+
+            
+        
+
+            
+
+
+        </article>
+
+     </section> 
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="footer">
+            <section class="teaterista">
+                <h3>Teaterista</h3>
+                <ul class="teateristaUl">
+                    <li><a href="">Teatterit</a></li>
+                    <li><a href="">Yrityksille</a></li> 
+                    <li><a href="">Työpaikat</a></li> 
+                    <li><a href="">Oiva-raportit</a></li> 
+                    <li><a href="">Yhteiskuntavastuu</a></li> 
+                </ul>
+            </section>
+        
+            <section class="linkki">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-regular fa-envelope"></i>
+            </section>
+        
+            <section class="asiakaspalvelu">
+                <h3>Asiakaspalvelu</h3>
+                <ul class="asiakaspalveluUl" >
+                    <li><a href="">Ota yhteyttä</a></li>
+                    <li><a href="">Usein kysyttyä</a></li>
+                    <li><a href="">Maksaminen ja maksutavat</a></li>
+                    <li><a href="">Elokuvapaneeli</a></li>
+                </ul>
+            </section>
+        
+        
+        </footer>
+        </section>
+        <script src="../movies/script.js"></script>
+        <script src="./scripts/script-ticket.js"></script>
+    
+</body>
+</html>

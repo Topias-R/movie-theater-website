@@ -1,0 +1,377 @@
+body{
+    background-color: black;
+}
+.container{
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    
+    font-family: Poppins;
+}
+
+.menuImg{
+    width: 3%;
+    height: 3%;
+}
+
+.header{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+}
+
+.menuImg:hover{
+    color: blueviolet;
+}
+
+.menu li{
+    list-style-type: none;
+    margin: 0 3%;
+    text-align: center;
+}
+
+.menu li:hover{
+    cursor: pointer;
+}
+
+.menu a:hover{
+    color: blueviolet;
+}
+
+.footer li:hover{
+    cursor: pointer;
+}
+
+.footer a:hover{
+    color: blueviolet;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: blueviolet;
+}
+
+/*SISÄLTÖ*/
+
+.ticket-osto {
+    padding-bottom: 3%;
+}
+
+.hooyks {
+    font-size: 2.3rem;
+    color: fuchsia;
+    padding-bottom: 1%;
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 8px;
+}
+
+.fontti {
+    font-size: 1rem;
+    padding: 8px;
+}
+
+.ticket-ostosalue {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.ticket-ostosalue > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+}
+
+
+/* kuvien määritykset */
+figure {
+    width: 100%;
+   /* border: black solid 1px; */
+    padding: 0.1rem;
+}    
+figure img {
+    max-width: 100%;  
+}
+
+
+
+
+#lippu-infotaulu {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid;
+    padding: 10px;
+    font-size: 1rem;
+  
+  }
+  
+  #lippu-infotaulu td, #lippu-infotaulu th {
+    border: 2px dashed fuchsia;
+    padding: 8px;
+    border-left: hidden;
+    border-right: hidden;
+  }
+  
+  #lippu-infotaulu tr:nth-child(even){background-color: #201f1f;}
+  
+  #lippu-infotaulu tr:hover {
+    background-color: darkgrey;
+    color: black;
+}
+
+
+
+.lippu-osto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 8px;
+}
+.lippu-osto > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+    
+}
+  
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40;
+ 
+}
+
+
+.quantity-buttons {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    border: 1px solid rgba(240, 46, 170, 0.8);
+    height: 60px;
+    width:180px;
+    color: black;
+    box-shadow: 
+    0 6px 6px rgba(240, 46, 170, 0.8);
+  }
+
+
+  .quantity-buttons input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+    color: black;
+
+  }
+  .quantity-buttons button {
+    background-color: white;
+    border: none;
+    min-width: 50px;
+    color: black;
+  }
+
+  .quantity-buttons button:hover {background-color: rgba(240, 46, 170, 0.8);}
+
+.button {
+    cursor: pointer;
+    border: 1px solid rgba(240, 46, 170, 0.8);
+    background-color: transparent;
+    height: 60px;
+    width: 120px;
+    color:white;
+    font-size: 1.6rem;
+    box-shadow: 
+    0 6px 6px rgba(240, 46, 170, 0.8);
+
+}
+.button:hover{
+    background-color: rgba(240, 46, 170, 0.8);
+    color: black;
+}
+
+
+
+
+
+/*MEDIASCREEN*/
+
+/* Tablet-näkymän css-säännöt */
+@media only screen and (min-width: 426px) {
+    body {
+     
+      background-color: black;
+    
+    }
+
+
+    .ticket-ostosalue {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    .ticket-ostosalue > * {
+        flex-basis: 0px;
+        flex-grow: 1;
+    } 
+
+    
+
+
+/* tässä tippuu 2 päällekkäin ja 1 alle boxeista */
+    .ticket-transaktio, .ticket-info {
+        flex-basis: 0;
+    }
+
+
+  }
+
+  /* Desktop-näkymän css-säännöt */
+@media only screen and (min-width: 769px) {
+    body {
+      color: black;
+    }
+
+    .ticket-ostosalue {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    .ticket-ostosalue > * {
+        flex-basis: 0px;
+        flex-grow: 1;
+    }
+
+
+/* tässä tippuu 3 vierekkäin */
+    .ticket-kuva, .ticket-info, .ticket-transaktio {
+        flex-basis: 0;
+    }
+
+
+
+
+  }
+
+
+/*FOOTER*/
+
+
+.footer{
+    margin-top: 2rem;
+    display: flex;
+    font-size: 1rem;
+    color: gray;
+}
+
+.footer > *
+{
+    flex-grow: 1;
+}
+
+.footer a{
+    font-size: 1rem;
+    color: gray;
+}
+
+.footer i{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.footer h3{
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.teaterista, .linkki, .asiakaspalvelu{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.linkki{
+    font-size: 1.5rem;
+}
+
+
+@media only screen and (max-width: 1250px) {
+    .container{
+        width: 90%;
+    }
+    
+    .menuImg{
+        width: 4%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
+    
+    .menuImg{
+        width: 4%;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .container{
+        width: 90%;
+    }
+
+    .menu{
+        display: none;
+        font-size: 0.8rem;
+    }
+
+    .menuImg{
+        width: 15%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer{
+        display: block;
+    }
+
+    .footer a{
+        font-size: 0.8rem;
+    }
+
+    .linkki{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer h3{
+        font-size: 0.8rem;
+    }
+}
+
