@@ -1,0 +1,123 @@
+
+
+
+.hooyks {
+    font-size: 2.3rem;
+    color: fuchsia;
+    padding-bottom: 1%;
+}
+
+p {
+    padding: 1%;
+   
+}
+
+
+
+/* kuvien määritykset */
+figure {
+    width: 100%;
+   /* border: black solid 1px; */
+    padding: 0.1rem;
+}    
+figure img {
+    max-width: 100%;  
+}
+
+.contact-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap
+}
+
+.contact-main > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+}
+
+.contact-print {
+    padding: 10px;
+padding-top: 4%;
+color: lightgray;
+font-size: 1.4rem;
+
+}
+
+
+
+
+/* määrittelyt contact lomakkeelle */
+.red-asterisk {
+    color: red;
+    size: 0.8rem;
+}
+
+.contact {
+font-family: Poppins;
+box-sizing: border-box;
+background-color: black;
+padding: 10px;
+padding-top: 4%;
+color: lightgray;
+font-size: 1.4rem;
+}
+
+.fa-regular {
+    font-size: 2.7rem;
+}
+
+input, textarea, select {
+    background: rgb(19, 19, 19);
+}
+
+
+.radio-btn {
+  font: inherit;
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.contact input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #343434;
+  font-size: 1.2rem;
+  color: rgb(185, 185, 185);
+  
+}
+
+
+
+.contact input:hover {
+    border: 2px dashed fuchsia;
+}
+
+.contact textarea:hover {
+    border: 2px dashed fuchsia;
+}
+
+
+button[type=submit] {
+    cursor: pointer;
+    border: 1px none rgba(240, 46, 170, 0.8);
+    background-color: transparent;
+    height: 40px;
+    width: 120px;
+    color:white;
+    font-size: 1rem;
+    box-shadow: 
+    0 6px 18px rgba(240, 46, 170, 0.8);
+
+}
+button[type=submit]:hover{
+    background-color: rgba(240, 46, 170, 0.8);
+    color: black;
+}
