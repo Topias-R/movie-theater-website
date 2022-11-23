@@ -51,8 +51,11 @@ function clearInput() {
     // clear input fields kun tiedot lähetetään, lisää tänne kaikki kentät jotka putsataan
     var inputFirstName = document.getElementById("fname");
     inputFirstName.value = "";
- 
-     const textarea = document.getElementById('subject');
+
+    var inputLastName = document.getElementById("lname");
+    inputLastName.value = "";
+
+    const textarea = document.getElementById('subject');
     textarea.value = '';
  }
  
