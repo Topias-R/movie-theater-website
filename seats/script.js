@@ -1,13 +1,12 @@
 function toggleSelection(e) {
   const seatsList = document.querySelector(".seats-list");
-  e.target.classList.toggle("chosen-seat");
   const chosenSeats = [
     ...document.querySelectorAll('input[type="checkbox"]:checked'),
   ].map((seat) => {
     const seatListItem = document.createElement("li");
     seatListItem.textContent = `Rivi ${
-      Math.floor(seat.value / 6) + 1
-    }, Paikka ${(seat.value % 6) + 1}`;
+      Math.floor(seat.value / 9) + 1
+    }, Paikka ${(seat.value % 9) + 1}`;
     return seatListItem;
   });
   seatsList.replaceChildren(...chosenSeats);
