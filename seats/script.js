@@ -1,3 +1,17 @@
+const params = new Proxy(new URLSearchParams(window.location.search), {
+  get: (searchParams, prop) => searchParams.get(prop),
+});
+
+document.querySelector(".movie-title > h1").textContent = params.title;
+document.querySelector(".seat-info > h3").textContent = params.time;
+document.querySelector(".movie-info-item").innerHTML = params.info;
+document.querySelector(".movie-image").src = params.src;
+document.querySelector(".video").innerHTML = params.trailer;
+
+document.querySelectorAll('input[type="checkbox"]').forEach((seat) => {
+  if (Math.random() > 0.8) seat.disabled = true;
+});
+
 function toggleSelection(e) {
   const seatsList = document.querySelector(".seats-list");
   const chosenSeats = [
@@ -25,15 +39,15 @@ function buyTicket(e) {
 }
 
 function openTrailer() {
-  document.getElementById("trailer1").style.display = "block";
-  document.getElementById("button1").style.display = "none";
-  document.getElementById("buttonClose1").style.display = "block";
+  document.getElementById("trailer").style.display = "block";
+  document.getElementById("button").style.display = "none";
+  document.getElementById("buttonClose").style.display = "block";
 }
 
 function closeTrailer() {
-  document.getElementById("trailer1").style.display = "none";
-  document.getElementById("button1").style.display = "block";
-  document.getElementById("buttonClose1").style.display = "none";
+  document.getElementById("trailer").style.display = "none";
+  document.getElementById("button").style.display = "block";
+  document.getElementById("buttonClose").style.display = "none";
 }
 
 let clickmäärä = 0;
