@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--TYYLIT-->
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./layout-etusivu.css">
+    <link rel="stylesheet" href="layout-carousel-etusivu.css">
+
     <script src="https://kit.fontawesome.com/d36b7e5763.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -63,7 +67,99 @@
             </nav>
         </section>
 
+<!-- CAROUSEL ETUSIVU YLÄOSA -->
+<!-- YLÄOSAN KARUSELLI ALKAA ONLY DESKTOP! -->
+<div class="slideshow-container">
+    <div class="slideshow-inner">
 
+      <div class="mySlides fade">
+    <figure>
+        <img  src='./images-carousel-etusivu/starwars.jpg' style='width: 100%;' alt="star wars"/>
+    </figure>
+        <div class="text">Katso Star Wars elokuvat ja sarjat. Scifiä ja avaruusolentoja!</div>
+      </div>
+
+      <div class="mySlides fade">
+        <figure>
+        <img  src='./images-carousel-etusivu/jim.jpg' style='width: 100%;' alt="jim carrey"/>
+    </figure>
+        <div class="text">Komediat ja hauskat elokuvat.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <figure>
+        <img  src='./images-carousel-etusivu/jaws.gif' style='width: 97%;' alt="jaws"/>
+    </figure>
+        <div class="text">Sukella valikoimamme syvyyksiin. Legendaarinen Tappajahai.</div>
+      </div>
+
+
+    
+      <div class="mySlides fade">
+        <figure>
+        <img  src='./images-carousel-etusivu/pirates.jpg' style='width: 100%;' alt="pirates of the caribian"/>
+    </figure>
+        <div class="text">Pirates of the Caribbean sekä muita koko perheen Disney elokuvia.</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <figure>
+        <img  src='./images-carousel-etusivu/lotr2.jpg' style='width: 100%;' alt="lord of the rings"/>
+        </figure>
+        <div class="text">Lord of the Rings, Hobbit sekä fantasyelokuvien parhaat teokset.</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <figure>
+        <img  src='./images-carousel-etusivu/marvel.jpg' style='width: 100%;' alt="marvel"/>
+    </figure>
+        <div class="text">Marvelin kattava leffavalikoima. Löydä oma supersankarisi!</div>
+      </div>
+
+      <div class="mySlides fade">
+        <figure>
+        <img  src='./images-carousel-etusivu/pulp.jpg' style='width: 100%;' alt="pulp"/>
+    </figure>
+        <div class="text">Rikos ja toimintaelokuvat, Pulp Fiction mukaan lukien.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <figure>
+        <img  src='./images-carousel-etusivu/akikaurismaki.jpg' style='width: 100%;' alt="kaurismaki"/>
+    </figure>
+        <div class="text">Parhaat kotimaiset elokuvat.</div>
+      </div>
+
+
+      
+      </div>
+    
+    
+      <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+      <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+    </div>
+    <br/>
+    
+    <br>
+    <!--
+    <div style='text-align: center;'>
+    -->    
+        <div style='margin-left: 5%;'>
+      <span class="dot" onclick='currentSlide(1)'></span>
+      <span class="dot" onclick='currentSlide(2)'></span>
+      <span class="dot" onclick='currentSlide(3)'></span>
+      <span class="dot" onclick='currentSlide(4)'></span>
+      <span class="dot" onclick='currentSlide(5)'></span>
+      <span class="dot" onclick='currentSlide(6)'></span>
+      <span class="dot" onclick='currentSlide(7)'></span>
+      <span class="dot" onclick='currentSlide(8)'></span>
+ 
+    </div>
+    
+    </div>
+
+    <!--YLÄOSAN KARUSELLI LOPPUU-->
+    <!-- CAROUSEL LOPPU-->
 
         <article class="boxes">
 
@@ -312,5 +408,6 @@
     </footer>
     </section>
     <script src="./script-etusivu.js"></script>
+    <script src="./script-carousel-etusivu.js"></script>
 </body>
 </html>
