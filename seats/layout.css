@@ -44,7 +44,7 @@ input[type="checkbox"]:focus + span:before {
   outline: 2px dotted #aaa;
 }
 
-input[type="checkbox"]:disabled + span {
+input[type="checkbox"]:disabled + span:before {
   background-color: red;
 }
 

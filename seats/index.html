@@ -43,10 +43,18 @@
         <form class="seats" onclick="toggleSelection(event)">
           <span class="movie-screen"></span>
           <label
-            ><input autocomplete="off" type="checkbox" value="0" /><span></span
+            ><input
+              autocomplete="off"
+              type="checkbox"
+              value="0"
+              disabled /><span></span
           ></label>
           <label
-            ><input autocomplete="off" type="checkbox" value="1" /><span></span
+            ><input
+              autocomplete="off"
+              type="checkbox"
+              value="1"
+              disabled /><span></span
           ></label>
           <label
             ><input autocomplete="off" type="checkbox" value="2" /><span></span
@@ -82,7 +90,11 @@
             ><input autocomplete="off" type="checkbox" value="12" /><span></span
           ></label>
           <label
-            ><input autocomplete="off" type="checkbox" value="13" /><span></span
+            ><input
+              autocomplete="off"
+              type="checkbox"
+              value="13"
+              disabled /><span></span
           ></label>
           <label
             ><input autocomplete="off" type="checkbox" value="14" /><span></span
@@ -103,13 +115,25 @@
             ><input autocomplete="off" type="checkbox" value="19" /><span></span
           ></label>
           <label
-            ><input autocomplete="off" type="checkbox" value="20" /><span></span
+            ><input
+              autocomplete="off"
+              type="checkbox"
+              value="20"
+              disabled /><span></span
           ></label>
           <label
-            ><input autocomplete="off" type="checkbox" value="21" /><span></span
+            ><input
+              autocomplete="off"
+              type="checkbox"
+              value="21"
+              disabled /><span></span
           ></label>
           <label
-            ><input autocomplete="off" type="checkbox" value="22" /><span></span
+            ><input
+              autocomplete="off"
+              type="checkbox"
+              value="22"
+              disabled /><span></span
           ></label>
           <label
             ><input autocomplete="off" type="checkbox" value="23" /><span></span
@@ -139,13 +163,21 @@
             ><input autocomplete="off" type="checkbox" value="31" /><span></span
           ></label>
           <label
-            ><input autocomplete="off" type="checkbox" value="32" /><span></span
+            ><input
+              autocomplete="off"
+              type="checkbox"
+              value="32"
+              disabled /><span></span
           ></label>
           <label
             ><input autocomplete="off" type="checkbox" value="33" /><span></span
           ></label>
           <label
-            ><input autocomplete="off" type="checkbox" value="34" /><span></span
+            ><input
+              autocomplete="off"
+              type="checkbox"
+              value="34"
+              disabled /><span></span
           ></label>
           <label
             ><input autocomplete="off" type="checkbox" value="35" /><span></span
@@ -153,11 +185,13 @@
         </form>
 
         <section class="seat-info">
+          <h3>Esitys 8:00</h3>
+          <hr />
           <h3>Valitut paikat</h3>
           <hr />
           <ul class="seats-list"></ul>
           <hr />
-          <button class="buy-button">Osta liput</button>
+          <button class="buy-button" onclick="buyTicket()">Osta liput</button>
         </section>
       </section>
       <section class="movie-info">

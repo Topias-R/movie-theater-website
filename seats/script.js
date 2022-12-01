@@ -12,6 +12,18 @@ function toggleSelection(e) {
   seatsList.replaceChildren(...chosenSeats);
 }
 
+function buyTicket(e) {
+  window.location.href =
+    "/purchase/?" +
+    new URLSearchParams({
+      movie: document.querySelector(".movie-title > h1").textContent,
+      time: document.querySelector(".seat-info > h3").textContent,
+      seats: [...document.querySelector(".seats-list").children]
+        .map((node) => node.textContent)
+        .join(";"),
+    });
+}
+
 function openTrailer() {
   document.getElementById("trailer1").style.display = "block";
   document.getElementById("button1").style.display = "none";
