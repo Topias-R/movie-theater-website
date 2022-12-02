@@ -2,11 +2,13 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   get: (searchParams, prop) => searchParams.get(prop),
 });
 
-document.querySelector(".movie-title > h1").textContent = params.title;
-document.querySelector(".seat-info > h3").textContent = params.time;
-document.querySelector(".movie-info-item").innerHTML = params.info;
-document.querySelector(".movie-image").src = params.src;
-document.querySelector(".video").innerHTML = params.trailer;
+const movie = movies[params.movie];
+
+document.querySelector(".movie-title > h1").textContent = movie.title;
+document.querySelector(".seat-info > h3").textContent = movie.time;
+document.querySelector(".movie-info-item").innerHTML = movie.info;
+document.querySelector(".movie-image").src = movie.src;
+document.querySelector(".video").innerHTML = movie.trailer;
 
 document.querySelectorAll('input[type="checkbox"]').forEach((seat) => {
   if (Math.random() > 0.8) seat.disabled = true;
