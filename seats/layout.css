@@ -89,6 +89,10 @@ label:nth-child(n + 29):nth-child(-n + 37) {
   flex-grow: 1;
 }
 
+#time {
+  font-size: 1.2rem;
+}
+
 #title {
   font-size: 2rem;
   color: blueviolet;
@@ -96,7 +100,7 @@ label:nth-child(n + 29):nth-child(-n + 37) {
 }
 
 .buy-button {
-  background-color: blueviolet;
+  background: linear-gradient(blueviolet, blue);
   border: none;
   color: white;
   border-radius: 0.5rem;
@@ -104,6 +108,7 @@ label:nth-child(n + 29):nth-child(-n + 37) {
   font-size: 1.5rem;
   margin: 1rem;
   margin-left: 0;
+  cursor: pointer;
 }
 
 .movie-title {

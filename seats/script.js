@@ -6,7 +6,7 @@ const movie = movies[params.movie];
 
 document.querySelector(".movie-title > h1").textContent = movie.title;
 document.querySelector(".seat-info > h3").textContent =
-  getNextAvailableShow(movie.time) + " " + movie.time;
+  getNextAvailableShow(movie.time) + " • klo " + movie.time;
 document.querySelector(".movie-info-item").innerHTML = movie.info;
 document.querySelector(".movie-image").src = movie.src;
 document.querySelector(".video").innerHTML = movie.trailer;
