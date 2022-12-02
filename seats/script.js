@@ -5,10 +5,22 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 const movie = movies[params.movie];
 
 document.querySelector(".movie-title > h1").textContent = movie.title;
-document.querySelector(".seat-info > h3").textContent = movie.time;
+document.querySelector(".seat-info > h3").textContent =
+  getNextAvailableShow(movie.time) + " " + movie.time;
 document.querySelector(".movie-info-item").innerHTML = movie.info;
 document.querySelector(".movie-image").src = movie.src;
 document.querySelector(".video").innerHTML = movie.trailer;
+
+function getNextAvailableShow(time) {
+  const d = new Date();
+  const c = new Date();
+  c.setHours(time.split(":")[0] - 1, 0, 0, 0);
+  if (d.getTime() < c.getTime()) return d.toLocaleDateString();
+  else {
+    d.setDate(d.getDate() + 1);
+    return d.toLocaleDateString();
+  }
+}
 
 document.querySelectorAll('input[type="checkbox"]').forEach((seat) => {
   if (Math.random() > 0.8) seat.disabled = true;
@@ -29,14 +41,15 @@ function toggleSelection(e) {
 }
 
 function buyTicket(e) {
+  const seats = [...document.querySelector(".seats-list").children].map(
+    (node) => node.textContent
+  );
+  if (seats.length === 0) return;
   window.location.href =
     "/purchase/?" +
     new URLSearchParams({
-      movie: document.querySelector(".movie-title > h1").textContent,
-      time: document.querySelector(".seat-info > h3").textContent,
-      seats: [...document.querySelector(".seats-list").children]
-        .map((node) => node.textContent)
-        .join(";"),
+      movie: params.movie,
+      seats: seats.join(";"),
     });
 }
 
