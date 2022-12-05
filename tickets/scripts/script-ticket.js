@@ -74,10 +74,65 @@ minusButton.forEach(function(btn) {
 
 })
 
-
 function FuncTotal() {
   var x = document.getElementById("lippucount");
   var currentVal = x.value;
   document.getElementById("output").innerHTML = "Olet ostamassa: " + currentVal
   + " kappaletta lippuja." + " Lippusi maksavat yhteensä: " + currentVal * 15 + " euroa.";
       }
+
+  // LIITY KANTA_ASIAKKAAKSI
+ 
+  function myFunction() {
+    var lomake = document.getElementById("kantisLomake");
+    if (lomake.style.display === "block") {
+      lomake.style.display = "none";
+    } else {
+      lomake.style.display = "block";
+    }
+  }
+
+  function FuncJoin() {
+
+    var kiitos = document.getElementById("kiitosVastaus"); 
+
+    if (kiitos.style.display === "block") {
+      kiitos.style.display = "none";
+    } else {
+      kiitos.style.display = "block";
+    }
+  
+
+    /*
+    if (empt == "")
+    {
+    alert("Please input a Value");
+    return false;
+    }
+    else 
+    {
+    alert('Olemme lisänneet teidät kanta-asiakkaaksi!');
+    return true; 
+    }
+    */
+
+
+  }
+
+
+/*
+  function required()
+  {
+  var empt = document.forms["form1"]["firstname"].value;
+  if (empt == "")
+  {
+  alert("Please input a Value");
+  return false;
+  }
+  else 
+  {
+  alert('Code has accepted : you can try another');
+  return true; 
+  }
+  }
+*/
