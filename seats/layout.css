@@ -11,12 +11,18 @@ body {
 
 .seats {
   display: grid;
-  grid-template-columns: repeat(6, 2rem);
-  grid-template-rows: repeat(6, 2rem);
-  gap: 1px 1px;
+  grid-template-columns: repeat(9, 2rem);
+  grid-template-rows: 0.5rem repeat(5, 2rem);
+  gap: 4px 4px;
   justify-self: center;
-  background-color: gray;
   height: min-content;
+}
+
+.movie-screen {
+  grid-column: 2 / 9;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
 }
 
 input[type="checkbox"] + span {
@@ -25,9 +31,8 @@ input[type="checkbox"] + span {
 input[type="checkbox"] + span:before {
   content: "";
   display: block;
-  border: 4px solid black;
-  height: 2rem;
-  width: 2rem;
+  height: 100%;
+  width: 100%;
   background-color: green;
 }
 
@@ -39,7 +44,7 @@ input[type="checkbox"]:focus + span:before {
   outline: 2px dotted #aaa;
 }
 
-input[type="checkbox"]:disabled + span {
+input[type="checkbox"]:disabled + span:before {
   background-color: red;
 }
 
@@ -53,12 +58,20 @@ input[type="checkbox"] {
   z-index: -1;
 }
 
-.seat.chosen-seat {
-  background-color: yellow;
+label:nth-child(n + 2):nth-child(-n + 10) {
+  grid-row-start: 3;
 }
 
-.seat.reserved-seat {
-  background-color: red;
+label:nth-child(n + 11):nth-child(-n + 19) {
+  grid-row-start: 4;
+}
+
+label:nth-child(n + 20):nth-child(-n + 28) {
+  grid-row-start: 5;
+}
+
+label:nth-child(n + 29):nth-child(-n + 37) {
+  grid-row-start: 6;
 }
 
 .seats-list {
@@ -76,6 +89,10 @@ input[type="checkbox"] {
   flex-grow: 1;
 }
 
+#time {
+  font-size: 1.2rem;
+}
+
 #title {
   font-size: 2rem;
   color: blueviolet;
@@ -83,7 +100,7 @@ input[type="checkbox"] {
 }
 
 .buy-button {
-  background-color: blueviolet;
+  background: linear-gradient(blueviolet, blue);
   border: none;
   color: white;
   border-radius: 0.5rem;
@@ -91,6 +108,7 @@ input[type="checkbox"] {
   font-size: 1.5rem;
   margin: 1rem;
   margin-left: 0;
+  cursor: pointer;
 }
 
 .movie-title {
@@ -124,10 +142,9 @@ hr {
 }
 
 .btn {
-  border: 1px solid black;
-  background-color: white;
-  border-radius: 0.5rem;
-  color: black;
+  border: 1px solid blueviolet;
+  border-radius: 5rem;
+  color: blueviolet;
   padding: 10px;
   margin: 1rem;
 }
@@ -238,7 +255,7 @@ a {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 864px) {
   .seat-selection {
     display: grid;
     grid-template-rows: max-content max-content;
@@ -253,7 +270,9 @@ a {
   .seat-info {
     margin-top: 2rem;
   }
+}
 
+@media only screen and (max-width: 1250px) {
   .container {
     width: 90%;
   }

@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--TYYLIT-->
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./layout-etusivu.css">
-    <script src="https://kit.fontawesome.com/d36b7e5763.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="layout-carousel-etusivu.css">
 
+    <script src="https://kit.fontawesome.com/d36b7e5763.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-
     <title>Etusivu</title>
 
 </head>
@@ -37,7 +39,7 @@
                       <section id="myLinks">
                         <a href="./movies/index.html" class="ylalinks">Choose movies</a>
                         <a href="./shows/index.html" class="ylalinks">All movies</a>
-                        <a href="" class="ylalinks">Coming New</a>
+                        <a href="index.html" class="ylalinks"><figure class="fig20pros"><img src="./img/logo-LL.png"></figure></a>
                         <a href="./tickets/index.html" class="ylalinks">Tickets</a>
                         <a href="./aboutus/index.html" class="ylalinks">About us</a>
 
@@ -65,7 +67,97 @@
             </nav>
         </section>
 
+<!-- CAROUSEL ETUSIVU YLÄOSA -->
+<!-- YLÄOSAN KARUSELLI ALKAA ONLY DESKTOP! -->
+<div class="slideshow-container">
+    <div class="slideshow-inner">
 
+      <div class="mySlides fade">
+    <figure>
+        <img  src='./images-carousel-etusivu/starwars.jpg' style='width: 100%;' alt="star wars"/>
+    </figure>
+        <div class="text">Katso Star Wars elokuvat ja sarjat. Scifiä ja avaruusolentoja!</div>
+      </div>
+
+      <div class="mySlides fade">
+        <figure>
+        <img  src='./images-carousel-etusivu/dumb-dumber.jpg' style='width: 100%;' alt="jim carrey"/>
+    </figure>
+        <div class="text">Komediat ja hauskat elokuvat.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <figure>
+        <img  src='./images-carousel-etusivu/jaws.gif' style='width: 100%;' alt="jaws"/>
+    </figure>
+        <div class="text">Sukella valikoimamme syvyyksiin, jännitystä jokaiseen makuun.</div>
+      </div>
+      <div class="mySlides fade">
+        <figure>
+        <img  src='./images-carousel-etusivu/pirates.jpg' style='width: 100%;' alt="pirates of the caribian"/>
+    </figure>
+        <div class="text">Pirates of the Caribbean sekä muita koko perheen Disney elokuvia.</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <figure>
+        <img  src='./images-carousel-etusivu/lotr2.jpg' style='width: 100%;' alt="lord of the rings"/>
+        </figure>
+        <div class="text">Lord of the Rings, Hobbit sekä fantasyelokuvien parhaat teokset.</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <figure>
+        <img  src='./images-carousel-etusivu/marvel.jpg' style='width: 100%;' alt="marvel"/>
+    </figure>
+        <div class="text">Marvelin kattava leffavalikoima. Löydä oma supersankarisi!</div>
+      </div>
+
+      <div class="mySlides fade">
+        <figure>
+        <img  src='./images-carousel-etusivu/pulp.jpg' style='width: 100%;' alt="pulp"/>
+    </figure>
+        <div class="text">Rikos ja toimintaelokuvat, Pulp Fiction mukaan lukien.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <figure>
+        <img  src='./images-carousel-etusivu/akikaurismaki.jpg' style='width: 100%;' alt="kaurismaki"/>
+    </figure>
+        <div class="text">Parhaat kotimaiset elokuvat.</div>
+      </div>
+
+
+
+      
+      </div>
+    
+    
+      <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+      <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+    </div>
+    <br/>
+    
+    <br>
+    <!--
+    <div style='text-align: center;'>
+    -->    
+        <div style='margin-left: 1%;'>
+      <span class="dot" onclick='currentSlide(1)'></span>
+      <span class="dot" onclick='currentSlide(2)'></span>
+      <span class="dot" onclick='currentSlide(3)'></span>
+      <span class="dot" onclick='currentSlide(4)'></span>
+      <span class="dot" onclick='currentSlide(5)'></span>
+      <span class="dot" onclick='currentSlide(6)'></span>
+      <span class="dot" onclick='currentSlide(7)'></span>
+      <span class="dot" onclick='currentSlide(8)'></span>
+ 
+    </div>
+    
+    </div>
+
+    <!--YLÄOSAN KARUSELLI LOPPUU-->
+    <!-- CAROUSEL LOPPU-->
 
         <article class="boxes">
 
@@ -73,10 +165,13 @@
             <section class="box1">
                 
                 <figure class="kuva">
-                    <img src="./img/logotemp.png" alt="kuva">
-                    <h3>Leffateatteri</h3>
-                    <p>Nimi</p>
-                    <p>Logo</p>
+                    <img src="./img/logo-LL.png" alt="kuva">
+                    <h3 class="p-white-center">Movie Theater</h3>
+
+                    <p class="p-white-center">katuosoite</p>
+                    <p class="p-white-center">postinumero</p>
+                    <p class="p-white-center">kaupunki</p>
+                    
                 </figure>
             </section>
     
@@ -127,10 +222,10 @@
                     
                     <h3 class="p-black-backround">Black Adam</h3>
                     <section class="white-line">
-                    <p class="p-black-backround">28.10.2022 • klo 21:00</p> 
-                    <p class="p-black-backround">Action/Fantasy • 125min • 2022</p>
+                    <p class="p-black-backround show-time">08:00</p> 
+                    <p class="p-black-backround">Action and Fantasy • 125min • 2022</p>
                     <section class="ostosalue">
-                        <button class="btnstyle-fuchsia-b"><a href="./seats/index.html">Varaa paikat <i class="fa-solid fa-arrow-right"></i></a></button>
+                        <button class="btnstyle-fuchsia-b"><a href="./seats/?movie=blackadam">Varaa paikat <i class="fa-solid fa-arrow-right"></i></a></button>
                         <button class="btnstyle-fuchsia-b"><a href="https://www.imdb.com/title/tt6443346/">IMDb</a></button>
                         </section>
                     
@@ -140,7 +235,39 @@
                 
             </section>
 
-    
+
+
+
+
+
+
+
+            <section class="box5">
+                <figure class="ikarajat">
+                    <section class="boxes-header">
+                         <img src="./img/K-12.jpg"><img src="./img/contains_disturbing_content.jpg"><img src="./img/contains_violence.jpg">
+                </section></figure>
+                <figure class="kuva">
+                    <img src="./img/wakanda.jpg" alt="kuva">
+                    <h3 class="p-black-backround">Wakanda Forever</h3>
+                    <section class="white-line">
+                    <p class="p-black-backround show-time">11:00</p>
+                    <p class="p-black-backround">Action and Adventure • 161min • 2022</p>
+                   <section class="ostosalue">
+                    <button class="btnstyle-fuchsia-w"><a href="./seats/?movie=wakandaforever">Varaa paikat <i class="fa-solid fa-arrow-right"></i></a></button>
+                    <button class="btnstyle-fuchsia-w"><a href="https://www.imdb.com/title/tt9114286/">IMDb</a></button>
+                </section> 
+                    </section>
+                </figure>
+            </section>
+
+
+
+
+
+
+
+    <!--
             <section class="box5">
                 <figure class="ikarajat">
                     <section class="boxes-header">
@@ -159,6 +286,8 @@
                     </section>
                 </figure>
             </section>
+
+            -->
     
             <section class="box6">
                 <figure class="ikarajat">
@@ -170,10 +299,10 @@
                     <img src="./img/ihmellinen-maailma.jpg" alt="kuva">
                     <h3 class="p-black-backround">Ihmeellinen Maailma</h3>
                     <section class="white-line">
-                    <p class="p-black-backround">29.10.2022 • klo 15:00</p>
+                    <p class="p-black-backround show-time">17:00</p>
                     <p class="p-black-backround">Comedy • 99min • 2022</p>
                     <section class="ostosalue">
-                    <button class="btnstyle-fuchsia-w"><a href="./seats/index.html">Varaa paikat <i class="fa-solid fa-arrow-right"></i></a></button>
+                    <button class="btnstyle-fuchsia-w"><a href="./seats/?movie=ihmeellinenmaailma">Varaa paikat <i class="fa-solid fa-arrow-right"></i></a></button>
                     <button class="btnstyle-fuchsia-w"><a href="https://www.imdb.com/title/tt10298840/?ref_=fn_al_tt_1">IMDb</a></button>
 
                 </section>
@@ -184,17 +313,17 @@
             <section class="box7">
                 <figure class="ikarajat">
                 <section class="boxes-header">
-                     <img src="./img/K-16.jpg"><img src="./img/contains_violence.jpg"><img src="./img/contains_substance_abuse.jpg">
+                     <img src="./img/K-12.jpg"><img src="./img/contains_disturbing_content.jpg"><img src="./img/contains_substance_abuse.jpg">
             </section></figure>
                 <figure class="kuva">
-                    <img src="./img/goodfellas.jpg" alt="kuva">
-                    <h3 class="p-black-backround">Goodfellas</h3>
+                    <img src="./img/calljane.jpg" alt="kuva">
+                    <h3 class="p-black-backround">Call Jane</h3>
                     <section class="white-line">
-                    <p class="p-black-backround">29.10.2022 • klo 18:00</p>
-                    <p class="p-black-backround">Crime • 156min • 1990</p>
+                    <p class="p-black-backround show-time">14:00</p>
+                    <p class="p-black-backround">Drama • 121min • 2022</p>
                     <section class="ostosalue">
-                    <button class="btnstyle-fuchsia-w"><a href="./seats/index.html">Varaa paikat <i class="fa-solid fa-arrow-right"></i></a></button>
-                    <button class="btnstyle-fuchsia-w"><a href="https://www.imdb.com/title/tt0099685/?ref_=nv_sr_srsg_0">IMDb</a></button>
+                    <button class="btnstyle-fuchsia-w"><a href="./seats/?movie=calljane">Varaa paikat <i class="fa-solid fa-arrow-right"></i></a></button>
+                    <button class="btnstyle-fuchsia-w"><a href="https://www.imdb.com/title/tt7461272/">IMDb</a></button>
 
                 </section>
                     </section>
@@ -211,11 +340,11 @@
                     <img src="./img/sydanpeto.jpg" alt="kuva">
                     <h3 class="p-black-backround">Sydänpeto</h3>
                     <section class="white-line">
-                    <p class="p-black-backround">29.10.2022 • klo 21:00</p>
+                    <p class="p-black-backround show-time">23:00</p>
                     <p class="p-black-backround">Drama • 102min • 2022</p>
 
                     <section class="ostosalue">
-                    <button class="btnstyle-fuchsia-b"><a href="./seats/index.html">Varaa paikat <i class="fa-solid fa-arrow-right"></i></a></button>
+                    <button class="btnstyle-fuchsia-b"><a href="./seats/?movie=sydanpeto">Varaa paikat <i class="fa-solid fa-arrow-right"></i></a></button>
                     <button class="btnstyle-fuchsia-b"><a href="https://www.imdb.com/title/tt15740768/">IMDb</a></button>
                     </section>
 
@@ -260,7 +389,8 @@
                     
                     <section class="ostosalue">
                     <button class="btnstyle-fuchsia-w"><a href="./aboutus/index.html#map">Sijainti</a> <i class="fa-solid fa-arrow-right"></i></button>
-                    <button class="btnstyle-fuchsia-w">Feedback <i class="fa-solid fa-arrow-right"></i></button>
+                  
+                    <button class="btnstyle-fuchsia-w"><a href="./feedback/index.html">Feedback <i class="fa-solid fa-arrow-right"></i></a></button>
                     </section>
                 </figure>
             </section>
@@ -311,5 +441,6 @@
     </footer>
     </section>
     <script src="./script-etusivu.js"></script>
+    <script src="./script-carousel-etusivu.js"></script>
 </body>
 </html>

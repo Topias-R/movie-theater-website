@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./layout.css">
-    <script src="https://kit.fontawesome.com/ec32ed19cd.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <script
+      src="https://kit.fontawesome.com/ec32ed19cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Choose movie</title>
-</head>
-<body id="body">
+  </head>
+  <body id="body">
     <section class="container" id="container">
+
         <nav class="header" id="header">
             <i class="fa-solid fa-bars menuImg" onclick="ShowMenu()"></i>
             <ul class="menu" id="menu">
@@ -32,288 +39,555 @@
         </section>
 
 
+      <section class="title">
+        <hr />
+        <h1 id="title">Choose movie</h1>
+        <hr />
+      </section>
 
-        <section class="slider-container">
-              <section id="Prev" class="arrow-left" style="display: none;"><section class="arrow-bg"><section class="arrow"></section></section></section>
+      <section class="slider-container">
+        <section id="Prev" class="arrow-left" style="display: none">
+          <section class="arrow-bg"><section class="arrow"></section></section>
+        </section>
 
-              <section id="Next" class="arrow-right"><section class="arrow-bg"><section class="arrow"></section></section></section>
-        
+        <section id="Next" class="arrow-right">
+          <section class="arrow-bg"><section class="arrow"></section></section>
+        </section>
 
-            <section id="slider-track" class="slider-track">
-                <section class="slider-item" id="slider-item">
-                    <img id="1" src="../img/movie1.jpeg" onclick="showInfo(this)">
-                </section>
-                <section class="slider-item">
-                    <img id="2" src="../img/movie2.jpeg" alt="" onclick="showInfo(this)">
-                </section>
-                <section class="slider-item">
-                    <img id="3" src="../img/movie3.jpeg" alt="" onclick="showInfo(this)">
-                </section>
-                <section class="slider-item">
-                    <img id="4" src="../img/movie4.jpeg" alt="" onclick="showInfo(this)">
-                </section>
-                <section class="slider-item">
-                    <img id="5" src="../img/movie5.jpeg" alt="" onclick="showInfo(this)">
-                </section>
-                <section class="slider-item">
-                    <img id="6" src="../img/movie6.jpeg" alt="" onclick="showInfo(this)">
-                </section>
-            </section>
-    </section>
+        <section id="slider-track" class="slider-track">
+          <section class="slider-item" id="slider-item">
+            <img id="1" src="../img/movie1.jpeg" onclick="showInfo(this)" />
+          </section>
+          <section class="slider-item">
+            <img
+              id="2"
+              src="../img/movie2.jpeg"
+              alt=""
+              onclick="showInfo(this)"
+            />
+          </section>
+          <section class="slider-item">
+            <img
+              id="3"
+              src="../img/movie3.jpeg"
+              alt=""
+              onclick="showInfo(this)"
+            />
+          </section>
+          <section class="slider-item">
+            <img
+              id="4"
+              src="../img/movie4.jpeg"
+              alt=""
+              onclick="showInfo(this)"
+            />
+          </section>
+          <section class="slider-item">
+            <img
+              id="5"
+              src="../img/movie5.jpeg"
+              alt=""
+              onclick="showInfo(this)"
+            />
+          </section>
+          <section class="slider-item">
+            <img
+              id="6"
+              src="../img/movie6.jpeg"
+              alt=""
+              onclick="showInfo(this)"
+            />
+          </section>
+        </section>
+      </section>
 
-    <section class="movie-info">
+      <section class="movie-info">
         <section id="movie-info-1">
-            <section class="movie-title">
-                <h1>Black Adam</h1>
-                <section class="buttonList">
-                    <a href="" id="button1" class="btn" onclick="Trailer(this); return false;">Trailer>></a>
-                    <a href="" id="buttonClose1" class="btn btnClose" onclick="CloseTrailer(); return false;">Close trailer</a>
-                    <a href="../seats/index.html" class="btn btnOsta" >Osta lippu </a>
-                </section>
+          <section class="movie-title">
+            <h1>Black Adam</h1>
+            <section class="buttonList">
+              <a
+                href=""
+                id="button1"
+                class="btn"
+                onclick="Trailer(this); return false;"
+                >Trailer>></a
+              >
+              <a
+                href=""
+                id="buttonClose1"
+                class="btn btnClose"
+                onclick="CloseTrailer(); return false;"
+                >Close trailer</a
+              >
+              <a href="/seats/?movie=blackadam" class="btn btnOsta"
+                >Osta lippu
+              </a>
             </section>
-            
-            <section id="trailer1" class="video">
-            <iframe class="video-item" src="https://www.youtube.com/embed/j0VQGOEbs44" title="Black Adam - Virallinen traileri 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></section>
-            <section class="movie-taulu">
-                <a href="">11:00</a>
-                <a href="">13:00</a>
-                <a href="">16:00</a>
-                <a href="">20:00</a>
-            </section>
-            <section class="movie-info-item">
-                <p>
-                    Maailma tarvitsi sankarin, se sai Black Adamin. <br> <br>
-                    New Line Cinema tuo valkokankaille Dwayne Johnsonin tähdittämän toimintaseikkailun Black Adam. Jauem Collet-Serra (Jungle Cruise) on ohjannut ensimmäisen DC-supersankari Black Adamista kertovan elokuvan, joka nähdään pian elokuvateattereissa. <br> <br>
-                
-                    Melkein 5000 vuotta sen jälkeen, kun hänelle suotiin muinaisten jumalten voimat ja hänet vangittiin, Black Adam (Johnson) vapautetaan maallisesta haudastaan, ja hän on valmis jakamaan nykymaailmalle oikeutta omaan tyyliinsä. <br> <br>
-                
-                    Yhdessä Johnsonin kanssa elokuvassa nähdään Aldis Hodgen (City on a Hill, One Night in Miami) Hawkmanina, Noah Centineo (To all the Boys I’ve Loved Before) Atom Smasherina, Sarah Shahi (Sex/Life, Rush Hour 3) Adriannana, Marwan Kenzari (Idän pikajunan arvoitus, Muumio) Ishmaelina, Quintessa Swindell (Voyagers, Trinkets) Cyclonena, Bodhi Sabongui (A Million Little Things) Amonina ja Pierce Brosnan (Mamma Mia! ja James Bond -elokuvat) Dr. Fatena.</p>
-                    <p>
-                        Tiedot: <br> <br>
-                        Ensi-ilta: 21.10.2022 <br> <br>
-                
-                        Kesto: 2 t 5 min <br> <br>
-                
-                        Levittäjä: Warner Bros. Finland Oy <br> <br>
-                
-                        Ohjaaja: Jaume Collet-Serra <br> <br>
-                
-                        Pääosissa: Dwayne Johnson, Aldis Hodge, Noah Centineo, Sarah Shahi, Marwan Kenzari, Pierce Brosnan</p>
-            </section>
+          </section>
+
+          <section id="trailer1" class="video">
+            <iframe
+              class="video-item"
+              src="https://www.youtube.com/embed/j0VQGOEbs44"
+              title="Black Adam - Virallinen traileri 2"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </section>
+          <section class="movie-taulu">
+            <a href="">11:00</a>
+            <a href="">13:00</a>
+            <a href="">16:00</a>
+            <a href="">20:00</a>
+          </section>
+          <section class="movie-info-item">
+            <p>
+              Maailma tarvitsi sankarin, se sai Black Adamin. <br />
+              <br />
+              New Line Cinema tuo valkokankaille Dwayne Johnsonin tähdittämän
+              toimintaseikkailun Black Adam. Jauem Collet-Serra (Jungle Cruise)
+              on ohjannut ensimmäisen DC-supersankari Black Adamista kertovan
+              elokuvan, joka nähdään pian elokuvateattereissa. <br />
+              <br />
+
+              Melkein 5000 vuotta sen jälkeen, kun hänelle suotiin muinaisten
+              jumalten voimat ja hänet vangittiin, Black Adam (Johnson)
+              vapautetaan maallisesta haudastaan, ja hän on valmis jakamaan
+              nykymaailmalle oikeutta omaan tyyliinsä. <br />
+              <br />
+
+              Yhdessä Johnsonin kanssa elokuvassa nähdään Aldis Hodgen (City on
+              a Hill, One Night in Miami) Hawkmanina, Noah Centineo (To all the
+              Boys I’ve Loved Before) Atom Smasherina, Sarah Shahi (Sex/Life,
+              Rush Hour 3) Adriannana, Marwan Kenzari (Idän pikajunan arvoitus,
+              Muumio) Ishmaelina, Quintessa Swindell (Voyagers, Trinkets)
+              Cyclonena, Bodhi Sabongui (A Million Little Things) Amonina ja
+              Pierce Brosnan (Mamma Mia! ja James Bond -elokuvat) Dr. Fatena.
+            </p>
+            <p>
+              Tiedot: <br />
+              <br />
+              Ensi-ilta: 21.10.2022 <br />
+              <br />
+
+              Kesto: 2 t 5 min <br />
+              <br />
+
+              Levittäjä: Warner Bros. Finland Oy <br />
+              <br />
+
+              Ohjaaja: Jaume Collet-Serra <br />
+              <br />
+
+              Pääosissa: Dwayne Johnson, Aldis Hodge, Noah Centineo, Sarah
+              Shahi, Marwan Kenzari, Pierce Brosnan
+            </p>
+          </section>
         </section>
 
-        <section id="movie-info-2" style="display: none;">
-            <section class="movie-title">
-                <h1>Wakanda Forewer</h1>
-                <section  class="buttonList">
-                    <a href="" id="button2" class="btn" onclick="Trailer(this); return false;">Trailer >></a>
-                    <a href="" id="buttonClose2" class="btn btnClose" onclick="CloseTrailer(); return false;">Close trailer</a>
-                    <a href="" class="btn btnOsta">Osta lippu</a>
-                </section>
+        <section id="movie-info-2" style="display: none">
+          <section class="movie-title">
+            <h1>Wakanda Forewer</h1>
+            <section class="buttonList">
+              <a
+                href=""
+                id="button2"
+                class="btn"
+                onclick="Trailer(this); return false;"
+                >Trailer >></a
+              >
+              <a
+                href=""
+                id="buttonClose2"
+                class="btn btnClose"
+                onclick="CloseTrailer(); return false;"
+                >Close trailer</a
+              >
+              <a href="/seats/?movie=wakandaforever" class="btn btnOsta"
+                >Osta lippu</a
+              >
             </section>
-            <section id="trailer2" class="video">
-                <iframe class="video-item" src="https://www.youtube.com/embed/SL-wh-66QGU" title="WAKANDA FOREVER" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
-            <section class="movie-taulu">
-                <a href="">11:00</a>
-                <a href="">13:00</a>
-                <a href="">16:00</a>
-                <a href="">20:00</a>
-            </section>
-                <section class="movie-info-item">
-                    <p>Marvel Studiosin elokuvassa BLACK PANTHER: WAKANDA FOREVER <br> <br>
-                        Kuningatar Ramonda (Angela Bassett), Shuri (Laetitia Wright), M’Baku (Winston Duke), Okoye (Danai Gurira) ja Dora Milaje (mm. Florence Kasumba) taistelevat suojellakseen kansakuntaansa asioihin sekaantuvia maailmanvaltoja vastaan kuningas T’Challan kuoleman jälkimainingeissa. <br> <br>
-                        Wakandalaisten ponnistellessa aloittaakseen elämässään uuden luvun, sankariemme täytyy lyöttäytyä yhteen Nakian (Lupita Nyongó) ja Everett Rossin (Martin Freeman) avustuksella ja takoa uusi tulevaisuus Wakandan kuningaskunnalle.</p>
+          </section>
+          <section id="trailer2" class="video">
+            <iframe
+              class="video-item"
+              src="https://www.youtube.com/embed/SL-wh-66QGU"
+              title="WAKANDA FOREVER"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </section>
+          <section class="movie-taulu">
+            <a href="">11:00</a>
+            <a href="">13:00</a>
+            <a href="">16:00</a>
+            <a href="">20:00</a>
+          </section>
+          <section class="movie-info-item">
+            <p>
+              Marvel Studiosin elokuvassa BLACK PANTHER: WAKANDA FOREVER <br />
+              <br />
+              Kuningatar Ramonda (Angela Bassett), Shuri (Laetitia Wright),
+              M’Baku (Winston Duke), Okoye (Danai Gurira) ja Dora Milaje (mm.
+              Florence Kasumba) taistelevat suojellakseen kansakuntaansa
+              asioihin sekaantuvia maailmanvaltoja vastaan kuningas T’Challan
+              kuoleman jälkimainingeissa. <br />
+              <br />
+              Wakandalaisten ponnistellessa aloittaakseen elämässään uuden
+              luvun, sankariemme täytyy lyöttäytyä yhteen Nakian (Lupita Nyongó)
+              ja Everett Rossin (Martin Freeman) avustuksella ja takoa uusi
+              tulevaisuus Wakandan kuningaskunnalle.
+            </p>
 
-                    <p>Tiedot: <br> <br>
-                        
-                        Ensi-ilta: 9.11.2022 <br> <br>
+            <p>
+              Tiedot: <br />
+              <br />
 
-                        Kesto: 2 t 41 min <br> <br>
-                        
-                        Levittäjä: Walt Disney Studios Motion Pictures AB <br> <br>
-                        
-                        Ohjaaja: Ryan Coogler <br> <br>
-                        
-                        Pääosissa: Angela Bassett, Letitia Wright, Winston Duke, Danai Gurira, Lupita Nyong'o, Martin Freeman</p>
-                </section>
+              Ensi-ilta: 9.11.2022 <br />
+              <br />
+
+              Kesto: 2 t 41 min <br />
+              <br />
+
+              Levittäjä: Walt Disney Studios Motion Pictures AB <br />
+              <br />
+
+              Ohjaaja: Ryan Coogler <br />
+              <br />
+
+              Pääosissa: Angela Bassett, Letitia Wright, Winston Duke, Danai
+              Gurira, Lupita Nyong'o, Martin Freeman
+            </p>
+          </section>
         </section>
 
-        <section id="movie-info-3" style="display: none;">
-            <section class="movie-title">
-                <h1>Call Jane</h1>
-                <section  class="buttonList">
-                    <a href="" id="button3" class="btn" onclick="Trailer(this); return false;">Trailer >></a>
-                    <a href="" id="buttonClose3" class="btn btnClose" onclick="CloseTrailer(); return false;">Close trailer</a>
-                    <a href="" class="btn btnOsta">Osta lippu</a>
-                </section>
+        <section id="movie-info-3" style="display: none">
+          <section class="movie-title">
+            <h1>Call Jane</h1>
+            <section class="buttonList">
+              <a
+                href=""
+                id="button3"
+                class="btn"
+                onclick="Trailer(this); return false;"
+                >Trailer >></a
+              >
+              <a
+                href=""
+                id="buttonClose3"
+                class="btn btnClose"
+                onclick="CloseTrailer(); return false;"
+                >Close trailer</a
+              >
+              <a href="/seats/?movie=calljane" class="btn btnOsta"
+                >Osta lippu</a
+              >
             </section>
-            <section id="trailer3" class="video">
-                <iframe class="video-item" src="https://www.youtube.com/embed/r28LdYdf3a4" title="Call Jane -elokuvan traileri (elokuvateattereissa 11.11.2022)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
-            <section class="movie-taulu">
-                <a href="">09:00</a>
-                <a href="">11:00</a>
-                <a href="">15:00</a>
-                <a href="">19:00</a>
-            </section>
-                <section class="movie-info-item">
-                    <p>Joy (Elizabeth Banks), on perinteinen 60-luvun amerikkalainen kotiäiti, joka kaipaa epätoivoisesti toista lasta. Joyn tullessa raskaaksi, iloa varjostaa tieto siitä, että raskaus uhkaa hänen omaa henkeänsä. <br> <br>
-                        Joy ei voi tehdä laillista aborttia USA:ssa vuonna 1968. Hänellä ei ole mitään tahoa minne kääntyä saadakseen apua, kunnes, hän kohtaa ryhmän nimeltään Janes. <br> <br>
-                        Salaista ryhmää tavallisia naisia yhdistää Virginia (Sigourney Weaver). He tarjoavat Joyn kaltaisille naisille valinnanvaraa ja pelastavat Joyn hengen sekä innon auttaa muita naisia hallitsemaan kohtaloaan.</p>
+          </section>
+          <section id="trailer3" class="video">
+            <iframe
+              class="video-item"
+              src="https://www.youtube.com/embed/r28LdYdf3a4"
+              title="Call Jane -elokuvan traileri (elokuvateattereissa 11.11.2022)"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </section>
+          <section class="movie-taulu">
+            <a href="">09:00</a>
+            <a href="">11:00</a>
+            <a href="">15:00</a>
+            <a href="">19:00</a>
+          </section>
+          <section class="movie-info-item">
+            <p>
+              Joy (Elizabeth Banks), on perinteinen 60-luvun amerikkalainen
+              kotiäiti, joka kaipaa epätoivoisesti toista lasta. Joyn tullessa
+              raskaaksi, iloa varjostaa tieto siitä, että raskaus uhkaa hänen
+              omaa henkeänsä. <br />
+              <br />
+              Joy ei voi tehdä laillista aborttia USA:ssa vuonna 1968. Hänellä
+              ei ole mitään tahoa minne kääntyä saadakseen apua, kunnes, hän
+              kohtaa ryhmän nimeltään Janes. <br />
+              <br />
+              Salaista ryhmää tavallisia naisia yhdistää Virginia (Sigourney
+              Weaver). He tarjoavat Joyn kaltaisille naisille valinnanvaraa ja
+              pelastavat Joyn hengen sekä innon auttaa muita naisia hallitsemaan
+              kohtaloaan.
+            </p>
 
-                    <p>Tiedot: <br> <br>
-                        Ensi-ilta: 11.11.2022<br> <br>
-                        
-                        Kesto: 2 t 1 min<br> <br>
-                        
-                        Levittäjä: Cinemanse Oy<br> <br>
-                        
-                        Ohjaaja: Phyllis Nagy<br> <br>
-                        
-                        Pääosissa: Elizabeth Banks, Sigourney Weaver, Chris Messina</p>
-                </section>
+            <p>
+              Tiedot: <br />
+              <br />
+              Ensi-ilta: 11.11.2022<br />
+              <br />
+
+              Kesto: 2 t 1 min<br />
+              <br />
+
+              Levittäjä: Cinemanse Oy<br />
+              <br />
+
+              Ohjaaja: Phyllis Nagy<br />
+              <br />
+
+              Pääosissa: Elizabeth Banks, Sigourney Weaver, Chris Messina
+            </p>
+          </section>
         </section>
 
-        <section id="movie-info-4" style="display: none;">
-            <section class="movie-title">
-                <h1>Ihmeellinen Maailma</h1>
-                <section  class="buttonList">
-                    <a href="" id="button4" class="btn" onclick="Trailer(this); return false;">Trailer >></a>
-                    <a href="" id="buttonClose4" class="btn btnClose" onclick="CloseTrailer(); return false;">Close trailer</a>
-                    <a href="" class="btn btnOsta">Osta lippu</a>
-                </section>
+        <section id="movie-info-4" style="display: none">
+          <section class="movie-title">
+            <h1>Ihmeellinen Maailma</h1>
+            <section class="buttonList">
+              <a
+                href=""
+                id="button4"
+                class="btn"
+                onclick="Trailer(this); return false;"
+                >Trailer >></a
+              >
+              <a
+                href=""
+                id="buttonClose4"
+                class="btn btnClose"
+                onclick="CloseTrailer(); return false;"
+                >Close trailer</a
+              >
+              <a href="/seats/?movie=ihmeellinenmaailma" class="btn btnOsta"
+                >Osta lippu</a
+              >
             </section>
-            <section id="trailer4" class="video">
-                <iframe class="video-item" src="https://www.youtube.com/embed/Ofgr1DxMjR4" title="IHMEELLINEN MAAILMA | Suomeksi puhuttu traileri" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
-            <section class="movie-taulu">
-                <a href="">10:00</a>
-                <a href="">13:00</a>
-                <a href="">17:00</a>
-                <a href="">20:00</a>
-            </section>
-            <section class="movie-info-item">
-                <p>Upouusi toimintaseikkailu Ihmeellinen maailma vie katsojat syvälle tuntemattoman ja vaarallisen maailman syövereihin, missä mielikuvitukselliset olennot odottavat Claden legendaarista seikkailijaperhettä, jonka sisäiset erimielisyydet uhkaavat tehdä tyhjäksi heidän viimeisimmän—ja ylivoimaisesti tärkeimmän—tutkimusmatkansa. <br> <br>
+          </section>
+          <section id="trailer4" class="video">
+            <iframe
+              class="video-item"
+              src="https://www.youtube.com/embed/Ofgr1DxMjR4"
+              title="IHMEELLINEN MAAILMA | Suomeksi puhuttu traileri"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </section>
+          <section class="movie-taulu">
+            <a href="">10:00</a>
+            <a href="">13:00</a>
+            <a href="">17:00</a>
+            <a href="">20:00</a>
+          </section>
+          <section class="movie-info-item">
+            <p>
+              Upouusi toimintaseikkailu Ihmeellinen maailma vie katsojat syvälle
+              tuntemattoman ja vaarallisen maailman syövereihin, missä
+              mielikuvitukselliset olennot odottavat Claden legendaarista
+              seikkailijaperhettä, jonka sisäiset erimielisyydet uhkaavat tehdä
+              tyhjäksi heidän viimeisimmän—ja ylivoimaisesti
+              tärkeimmän—tutkimusmatkansa. <br />
+              <br />
 
-                Elokuvan Ihmeellinen maailma ovat ohjanneet Don Hall (Oscar®-palkittu Big Hero 6, Raya ja viimeinen lohikäärme) sekä apulaisohjaaja ja käsikirjoittaja Qui Nguyen (elokuvan Raya ja viimeinen lohikäärme toinen käsikirjoittaja) ja tuottanut Roy Conli (Oscar®-palkittu Big Hero 6, Kaksin karkuteillä).</p>
-    
-                <p>
-                Tiedot: <br> <br>
-                Ensi-ilta: 25.11.2022<br> <br>
-    
-                Levittäjä: Walt Disney Studios Motion Pictures AB<br> <br>
-    
-                Ohjaaja: Don Hall</p>
-            </section>
+              Elokuvan Ihmeellinen maailma ovat ohjanneet Don Hall
+              (Oscar®-palkittu Big Hero 6, Raya ja viimeinen lohikäärme) sekä
+              apulaisohjaaja ja käsikirjoittaja Qui Nguyen (elokuvan Raya ja
+              viimeinen lohikäärme toinen käsikirjoittaja) ja tuottanut Roy
+              Conli (Oscar®-palkittu Big Hero 6, Kaksin karkuteillä).
+            </p>
+
+            <p>
+              Tiedot: <br />
+              <br />
+              Ensi-ilta: 25.11.2022<br />
+              <br />
+
+              Levittäjä: Walt Disney Studios Motion Pictures AB<br />
+              <br />
+
+              Ohjaaja: Don Hall
+            </p>
+          </section>
         </section>
 
-        <section id="movie-info-5" style="display: none;">
-            <section class="movie-title">
-                <h1>Rakkauden supersankari</h1>
-                <section  class="buttonList">
-                    <a href="" id="button5" class="btn" onclick="Trailer(this); return false;">Trailer >></a>
-                    <a href="" id="buttonClose5" class="btn btnClose" onclick="CloseTrailer(); return false;">Close trailer</a>
-                    <a href="" class="btn btnOsta">Osta lippu</a>
-                </section>
+        <section id="movie-info-5" style="display: none">
+          <section class="movie-title">
+            <h1>Rakkauden supersankari</h1>
+            <section class="buttonList">
+              <a
+                href=""
+                id="button5"
+                class="btn"
+                onclick="Trailer(this); return false;"
+                >Trailer >></a
+              >
+              <a
+                href=""
+                id="buttonClose5"
+                class="btn btnClose"
+                onclick="CloseTrailer(); return false;"
+                >Close trailer</a
+              >
+              <a href="/seats/?movie=rakkaudensupersankari" class="btn btnOsta"
+                >Osta lippu</a
+              >
             </section>
-            <section id="trailer5" class="video">
-                <iframe class="video-item" src="https://www.youtube.com/embed/ZrgCfu9Go28" title="Rakkauden supersankari (Supereroi) - Traileri - Elokuvateattereissa 18.11.2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
-            <section class="movie-taulu">
-                <a href="">12:00</a>
-                <a href="">14:00</a>
-                <a href="">18:00</a>
-                <a href="">21:00</a>
-            </section>
-            <section class="movie-info-item">
-                <p>Tarina nuoresta parista, joka rakastuu ja ponnistelee pitääkseen suhteensa eläväisenä hellyyden ja riitojen, valheiden ja tunteiden, salailun ja pettämisen pyörteissä. Tunteikas ja hymyilyttävä parisuhdedraama kertoo ajan kulumisen vaikutuksesta yhdessäoloon ja esittää yksinkertaisen mutta perustavanlaatuisen kysymyksen: mitä supervoimia vaaditaan, jotta voi rakastaa toista läpi elämän? Rakkauden supersankari on palkittujen ja arvostettujen elokuvien The Place ja Salaisuuksien illallinen ohjaajan Paolo Genovesen uusin työ.</p>
-                <p>Tiedot: <br><br>
-                    Ensi-ilta: 18.11.2022<br><br>
-                    
-                    Kesto: 2 t 1 min<br><br>
-                    
-                    Levittäjä: Oy Future Film Ab<br><br>
-                    
-                    Ohjaaja: Paolo Genovese<br><br>
-                    
-                    Pääosissa: Alessandro Borghi, Jasmine Trinca</p>
-            </section>
+          </section>
+          <section id="trailer5" class="video">
+            <iframe
+              class="video-item"
+              src="https://www.youtube.com/embed/ZrgCfu9Go28"
+              title="Rakkauden supersankari (Supereroi) - Traileri - Elokuvateattereissa 18.11.2022"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </section>
+          <section class="movie-taulu">
+            <a href="">12:00</a>
+            <a href="">14:00</a>
+            <a href="">18:00</a>
+            <a href="">21:00</a>
+          </section>
+          <section class="movie-info-item">
+            <p>
+              Tarina nuoresta parista, joka rakastuu ja ponnistelee pitääkseen
+              suhteensa eläväisenä hellyyden ja riitojen, valheiden ja
+              tunteiden, salailun ja pettämisen pyörteissä. Tunteikas ja
+              hymyilyttävä parisuhdedraama kertoo ajan kulumisen vaikutuksesta
+              yhdessäoloon ja esittää yksinkertaisen mutta perustavanlaatuisen
+              kysymyksen: mitä supervoimia vaaditaan, jotta voi rakastaa toista
+              läpi elämän? Rakkauden supersankari on palkittujen ja
+              arvostettujen elokuvien The Place ja Salaisuuksien illallinen
+              ohjaajan Paolo Genovesen uusin työ.
+            </p>
+            <p>
+              Tiedot: <br /><br />
+              Ensi-ilta: 18.11.2022<br /><br />
+
+              Kesto: 2 t 1 min<br /><br />
+
+              Levittäjä: Oy Future Film Ab<br /><br />
+
+              Ohjaaja: Paolo Genovese<br /><br />
+
+              Pääosissa: Alessandro Borghi, Jasmine Trinca
+            </p>
+          </section>
         </section>
 
-        <section id="movie-info-6" style="display: none;">
-            <section class="movie-title">
-                <h1>Sydänpeto</h1>
-                <section  class="buttonList">
-                    <a href="" id="button6" class="btn" onclick="Trailer(this); return false;">Trailer >></a>
-                    <a href="" id="buttonClose6" class="btn btnClose" onclick="CloseTrailer(); return false;">Close trailer</a>
-                    <a href="" class="btn btnOsta">Osta lippu</a>
-                </section>
+        <section id="movie-info-6" style="display: none">
+          <section class="movie-title">
+            <h1>Sydänpeto</h1>
+            <section class="buttonList">
+              <a
+                href=""
+                id="button6"
+                class="btn"
+                onclick="Trailer(this); return false;"
+                >Trailer >></a
+              >
+              <a
+                href=""
+                id="buttonClose6"
+                class="btn btnClose"
+                onclick="CloseTrailer(); return false;"
+                >Close trailer</a
+              >
+              <a href="/seats/?movie=sydanpeto" class="btn btnOsta"
+                >Osta lippu</a
+              >
             </section>
-            <section id="trailer6" class="video">
-                <iframe class="video-item"  src="https://www.youtube.com/embed/jD-iqSIw4u0" title="Sydänpeto-elokuvan virallinen traileri. Elokuvateattereissa 4.11.2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
-            <section class="movie-taulu">
-                <a href="">09:00</a>
-                <a href="">13:00</a>
-                <a href="">18:00</a>
-                <a href="">21:00</a>
-            </section>
-            <section class="movie-info-item">
-                <p>Ystävyys kääntyy ihastukseksi ja lopulta vaaralliseksi omistushaluksi neonvärejä hehkuvassa Sydänpedossa. Räppäriydestä haaveileva Elina (muusikko-näyttelijä Elsi Sloan) muuttaa äitinsä kanssa Helsingistä auringon paahtamalle Ranskan Rivieralle ja hullaantuu hetkessä siskopuolestaan, lupaavasta ballerinasta Sofiasta (Carmen Kassovitz). <br><br>
-                Kun Elina huomaa olevansa bileistä ja vapaudesta nauttivalle Sofialle vain hetken huumaa, hän käynnistää myrkyllisen valtapelin saadakseen Sofian vain ja ainoastaan itselleen. Koukuttavien klubisoundien ja ranskankielisten rap-keikkojen tahdissa sykkivän villin elokuvan on ohjannut Aino Suni, ja sen huumaavasta elokuvamusiikista vastaa maailmankuulusta Air-duosta tuttu JB Dunckel.</p>
-                <p>Tiedot: <br> <br>
-            Ensi-ilta: 4.11.2022 <br> <br>
-            
-            Kesto: 1 t 42 min<br> <br>
-            
-            Levittäjä: B-Plan Distribution<br> <br>
-            
-            Ohjaaja: Aino Suni<br> <br>
-            
-            Pääosissa: Elsi Sloan, Carmen Kassovitz, Adel Bencherif, Lucille Guillaume</p>
+          </section>
+          <section id="trailer6" class="video">
+            <iframe
+              class="video-item"
+              src="https://www.youtube.com/embed/jD-iqSIw4u0"
+              title="Sydänpeto-elokuvan virallinen traileri. Elokuvateattereissa 4.11.2022"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </section>
+          <section class="movie-taulu">
+            <a href="">09:00</a>
+            <a href="">13:00</a>
+            <a href="">18:00</a>
+            <a href="">21:00</a>
+          </section>
+          <section class="movie-info-item">
+            <p>
+              Ystävyys kääntyy ihastukseksi ja lopulta vaaralliseksi
+              omistushaluksi neonvärejä hehkuvassa Sydänpedossa. Räppäriydestä
+              haaveileva Elina (muusikko-näyttelijä Elsi Sloan) muuttaa äitinsä
+              kanssa Helsingistä auringon paahtamalle Ranskan Rivieralle ja
+              hullaantuu hetkessä siskopuolestaan, lupaavasta ballerinasta
+              Sofiasta (Carmen Kassovitz). <br /><br />
+              Kun Elina huomaa olevansa bileistä ja vapaudesta nauttivalle
+              Sofialle vain hetken huumaa, hän käynnistää myrkyllisen valtapelin
+              saadakseen Sofian vain ja ainoastaan itselleen. Koukuttavien
+              klubisoundien ja ranskankielisten rap-keikkojen tahdissa sykkivän
+              villin elokuvan on ohjannut Aino Suni, ja sen huumaavasta
+              elokuvamusiikista vastaa maailmankuulusta Air-duosta tuttu JB
+              Dunckel.
+            </p>
+            <p>
+              Tiedot: <br />
+              <br />
+              Ensi-ilta: 4.11.2022 <br />
+              <br />
+
+              Kesto: 1 t 42 min<br />
+              <br />
+
+              Levittäjä: B-Plan Distribution<br />
+              <br />
+
+              Ohjaaja: Aino Suni<br />
+              <br />
+
+              Pääosissa: Elsi Sloan, Carmen Kassovitz, Adel Bencherif, Lucille
+              Guillaume
+            </p>
+          </section>
         </section>
-    </section>
 
-    <section class="banneri">
-        <img id="mainosImg" src="./img/mainos3.jpg" alt="">
-    </section>
+        <section class="banneri">
+          <img id="mainosImg" src="./img/mainos3.jpg" alt="" />
+        </section>
+      </section>
 
-    </section>
+      <hr />
 
-<hr>
+      <footer class="footer">
+        <section class="teaterista">
+          <h3>Teaterista</h3>
+          <ul class="teateristaUl">
+            <li><a href="">Teatterit</a></li>
+            <li><a href="">Yrityksille</a></li>
+            <li><a href="">Työpaikat</a></li>
+            <li><a href="">Oiva-raportit</a></li>
+            <li><a href="">Yhteiskuntavastuu</a></li>
+          </ul>
+        </section>
 
-        <footer class="footer">
-            <section class="teaterista">
-                <h3>Teaterista</h3>
-                <ul class="teateristaUl">
-                    <li><a href="">Teatterit</a></li>
-                    <li><a href="">Yrityksille</a></li> 
-                    <li><a href="">Työpaikat</a></li> 
-                    <li><a href="">Oiva-raportit</a></li> 
-                    <li><a href="">Yhteiskuntavastuu</a></li> 
-                </ul>
-            </section>
+        <section class="linkki">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-regular fa-envelope"></i>
+        </section>
 
-            <section class="linkki">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-square-instagram"></i>
-                <i class="fa-regular fa-envelope"></i>
-            </section>
-
-            <section class="asiakaspalvelu">
-                <h3>Asiakaspalvelu</h3>
-                <ul class="asiakaspalveluUl" >
-                    <li><a href="">Ota yhteyttä</a></li>
-                    <li><a href="">Usein kysyttyä</a></li>
-                    <li><a href="">Maksaminen ja maksutavat</a></li>
-                    <li><a href="">Elokuvapaneeli</a></li>
-                </ul>
-            </section>
-    
-
-        </footer>
+        <section class="asiakaspalvelu">
+          <h3>Asiakaspalvelu</h3>
+          <ul class="asiakaspalveluUl">
+            <li><a href="">Ota yhteyttä</a></li>
+            <li><a href="">Usein kysyttyä</a></li>
+            <li><a href="">Maksaminen ja maksutavat</a></li>
+            <li><a href="">Elokuvapaneeli</a></li>
+          </ul>
+        </section>
+      </footer>
     </section>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

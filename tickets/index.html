@@ -93,7 +93,7 @@
             <p class="fontti">Myymme lippuja etukäteen max. 5 kpl per asiakas!</p>
             
             <section class="lippu-osto">
-            <input type="number" min="1" max="5" step="1" value="1" id="lippucount" onchange="FuncTotal()">
+            <input type="number" readonly min="1" max="5" step="1" value="1" id="lippucount" onchange="FuncTotal()">
             <button class="button" >Osta <i class="fa-solid fa-arrow-right-long"></i></button>  
             </section>
 
@@ -102,14 +102,66 @@
                 <span id="output"></span>
                  </p>
 
-            <p class="fontti"><a href="">Liity kanta-asiakkaaksi <i class="fa-solid fa-arrow-right-long"></i></a></p>
+<!--
+            <p class="fontti" ><a href="">Liity kanta-asiakkaaksi <i class="fa-solid fa-arrow-right-long"></i></a></p>
+
+ -->          
+        <section class="kantis-alue">
+                    <button class="button-kantis" onclick="myFunction()">Liity kanta-asiakkaaksi <i class="fa-solid fa-arrow-right-long"></i></button>
+                  
+                    <article id="kantisLomake">
+                    Liity kanta-asiakkaaksi ja ota edut heti käyttöösi!<br>
+                    <p class="fontti">
+                        <span id="output"></span>
+                         </p>
+                        
+                        <label for="fname"></label>
+                        <input type="text" id="fname" name="firstname" placeholder="Etunimi..">
+                        <i class="red-asterisk fa-solid fa-asterisk"></i>
+                    <br>
+                       
+
+                        <label for="lname"></label>
+                            <input type="text" id="lname" name="lastname" placeholder="Sukunimi.." >
+                            <i class="red-asterisk fa-solid fa-asterisk"></i>
+
+                            <br>
+                            <label for="puhnro"></label>
+                                <input type="text" id="puhnro" name="puhelinnumero" placeholder="Puhelinnumero..">
+                                <i class="red-asterisk fa-solid fa-asterisk"></i>
+
+                                <br>
+                                <label for="email"></label>
+                                    <input type="text" id="email" name="sahkoposti" placeholder="Sähköpostisi..">
+                                    <i class="red-asterisk fa-solid fa-asterisk"></i>
+                            <br>
+                            <p class="fontti">
+                                <span id="output"></span>
+                                 </p>
+                            <label> Hyväksyn henkilötietojen käsittelyn
+                                <input name="checkbox" type="checkbox" />
+                                <span></span>
+                                
+                              </label>
+
+                                    <p class="fontti">
+                                        <span id="output"></span>
+                                         </p>
+
+                            <button type="submit" class="button-kantis-liity" onclick="FuncJoin()">Liity <i class="fa-solid fa-arrow-right-long"></i></button>
+
+
+                       
+                     
+
+                        <article id="kiitosVastaus" name="kiitti">                    
+                            Kiitos liittymisestä! Saat pian sähköpostia meiltä.<br>
+                            </article>
+        </section>         
+            
+
 
             
-        
-
-            
-
-
         </article>
 
      </section> 
