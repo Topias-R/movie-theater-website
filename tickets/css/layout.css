@@ -49,6 +49,10 @@ body{
     color: blueviolet;
 }
 
+.logoImg{
+    max-height: 40px;
+}
+
 .footer li:hover{
     cursor: pointer;
 }

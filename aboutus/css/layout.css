@@ -52,6 +52,10 @@ a{
     color: white;
 }
 
+.logoImg{
+    max-height: 40px;
+}
+
 .fontti {
     font-size: 1.2rem;
     padding: 8px;
