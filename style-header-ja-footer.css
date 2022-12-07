@@ -12,7 +12,7 @@ body{
 }
 
 .menuImg:hover{
-    color: blueviolet;
+    color: fuchsia;
 }
 
 .menuImg{
@@ -24,7 +24,7 @@ body{
 }
 
 .menu a:hover{
-    color: blueviolet;
+    color: fuchsia;
 }
 
 
@@ -82,7 +82,7 @@ a{
 }
 
 .footer a:hover, .footer i:hover{
-    color: blueviolet;
+    color: fuchsia;
 }
 
 

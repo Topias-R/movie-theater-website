@@ -184,6 +184,7 @@ VaindaMainosImg();
 
 let clickmäärä = 0;
 function ShowMenu() {
+
   if (window.screen.width > 426) {
     document.getElementById("menu").style.display = "flex";
     document.getElementById("header").style.display = "flex";
@@ -219,4 +220,7 @@ function buyTicket(e) {
       info,
       trailer,
     });
+
 }
+
+
