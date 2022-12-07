@@ -1,15 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <script
+      src="https://kit.fontawesome.com/ec32ed19cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Valitse paikat</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+  <body>
+    <section class="container">
+      <nav class="header" id="header">
+        <i class="fa-solid fa-bars menuImg" onclick="ShowMenu()"></i>
+        <ul class="menu" id="menu">
+          <li><a href="../movies/index.html">Choose movies</a></li>
+          <li><a href="../shows/index.html">All movies</a></li>
+          <li><a href="">Coming New</a></li>
+          <li><a href="../tickets/index.html">Tickets</a></li>
+          <li><a href="../aboutus/index.html">About us</a></li>
+        </ul>
+      </nav>
 
-<body>
+      <section class="title">
+        <hr />
+        <h1 id="title">Valitse paikat</h1>
+        <hr />
+      </section>
 
-</body>
+      <section class="seat-selection">
+        <img class="movie-image" src="../img/movie1.jpeg" />
+        <form class="seats" onclick="toggleSelection(event)">
+          <span class="movie-screen"></span>
+          <label
+            ><input autocomplete="off" type="checkbox" value="0" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="1" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="2" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="3" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="4" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="5" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="6" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="7" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="8" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="9" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="10" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="11" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="12" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="13" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="14" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="15" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="16" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="17" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="18" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="19" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="20" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="21" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="22" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="23" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="24" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="25" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="26" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="27" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="28" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="29" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="30" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="31" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="32" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="33" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="34" /><span></span
+          ></label>
+          <label
+            ><input autocomplete="off" type="checkbox" value="35" /><span></span
+          ></label>
+        </form>
 
+        <section class="seat-info">
+          <h3 id="time"></h3>
+          <hr />
+          <h3>Valitut paikat</h3>
+          <hr />
+          <ul class="seats-list"></ul>
+          <hr />
+          <button class="buy-button" onclick="buyTicket()">Osta liput</button>
+        </section>
+      </section>
+      <section class="movie-info">
+        <section class="movie-title">
+          <h1></h1>
+          <a
+            href=""
+            id="button"
+            class="btn"
+            onclick="openTrailer(this); return false;"
+            >Trailer>></a
+          >
+          <a
+            href=""
+            id="buttonClose"
+            class="btn btnClose"
+            onclick="closeTrailer(); return false;"
+            >Close trailer</a
+          >
+        </section>
+        <section id="trailer" class="video">
+          <iframe
+            width="966"
+            height="543"
+            src="https://www.youtube.com/embed/j0VQGOEbs44"
+            title="Black Adam - Virallinen traileri 2"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <section class="movie-info-item"></section>
+      </section>
+
+      <footer class="footer">
+        <section class="teaterista">
+          <h3>Teaterista</h3>
+          <ul class="teateristaUl">
+            <li><a href="">Teatterit</a></li>
+            <li><a href="">Yrityksille</a></li>
+            <li><a href="">Työpaikat</a></li>
+            <li><a href="">Oiva-raportit</a></li>
+            <li><a href="">Yhteiskuntavastuu</a></li>
+          </ul>
+        </section>
+
+        <section class="linkki">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-regular fa-envelope"></i>
+        </section>
+
+        <section class="asiakaspalvelu">
+          <h3>Asiakaspalvelu</h3>
+          <ul class="asiakaspalveluUl">
+            <li><a href="">Ota yhteyttä</a></li>
+            <li><a href="">Usein kysyttyä</a></li>
+            <li><a href="">Maksaminen ja maksutavat</a></li>
+            <li><a href="">Elokuvapaneeli</a></li>
+          </ul>
+        </section>
+      </footer>
+    </section>
+    <script src="../movies.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>

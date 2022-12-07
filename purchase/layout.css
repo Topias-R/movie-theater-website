@@ -1,0 +1,22 @@
+.purchase-info {
+  margin: 2rem auto;
+  width: max-content;
+}
+
+.title {
+  display: flex;
+}
+
+.title > * {
+  flex-grow: 1;
+}
+
+#title {
+  font-size: 2rem;
+  color: blueviolet;
+  text-align: center;
+}
+
+hr {
+  background-color: white;
+}

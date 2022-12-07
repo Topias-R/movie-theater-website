@@ -1,15 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style-header-ja-footer.css" />
+    <link rel="stylesheet" href="./reset-all-movie.css" />
+    <link rel="stylesheet" href="../reset.css" />
+    <script src="https://kit.fontawesome.com/ec32ed19cd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>All movies</title>
+  </head>
+  <body>
+    <section class="container">
+      <nav class="header" id="header">
+        <i class="fa-solid fa-bars menuImg" onclick="ShowMenu()"><a href=""></a></i>
+        <ul class="menu" id="menu">
+          <li><a href="../movies/index.html">Choose movies</a></li>
+          <li><a href="./index.html">All movies</a></li>
+          <li><a href="../index.html">LOGO</a></li>
+          <li><a href="../tickets/index.html">Tickets</a></li>
+          <li><a href="../aboutus/index.html">About us</a></li>
+        </ul>
+      </nav>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+      <section class="title">
+        <hr />
+        <h1 id="title">All movies</h1>
+        <hr />
+      </section>
 
-<body>
+      <section class="allmovies">
+        <figure class="one">
+          <a class="buttonReadMore" href="../seats/?movie=blackadam">Varaa paikat</a>
+          <img src="../img/movie1.jpeg" alt="" />
+        </figure>
+        <figure class="two">
+          <a class="buttonReadMore" href="../seats/?movie=wakandaforever">Varaa paikat</a>
+          <img src="../img/movie2.jpeg" alt="" />
+        </figure>
+        <figure class="three">
+          <a class="buttonReadMore" href="../seats/?movie=calljane">Varaa paikat</a>
+          <img src="../img/movie3.jpeg" alt="" />
+        </figure>
+        <figure class="four">
+          <a class="buttonReadMore" href="../seats/?movie=ihmeellinenmaailma">Varaa paikat</a>
+          <img src="../img/movie4.jpeg" alt="" />
+        </figure>
+        <figure class="five">
+          <a class="buttonReadMore" href="../seats/?movie=rakkaudensupersankari">Varaa paikat</a>
+          <img src="../img/movie5.jpeg" alt="" />
+        </figure>
+        <figure class="six">
+          <a class="buttonReadMore" href="../seats/?movie=sydanpeto">Varaa paikat</a>
+          <img src="../img/movie6.jpeg" alt="" />
+        </figure>
+        <figure class="seven">
+          <a class="buttonReadMore" href="index.html">Coming soon</a>
+          <img src="../img/movie7.jpeg" alt="" />
+        </figure>
+        <figure class="eight">
+          <a class="buttonReadMore" href="index.html">Coming soon</a>
+          <img src="../img/movie8.jpeg" alt="" />
+        </figure>
+        <figure class="nine">
+          <a class="buttonReadMore" href="index.html">Coming soon</a>
+          <img src="../img/movie9.jpeg" alt="" />
+        </figure>
+      </section>
 
-</body>
+      <section class="title">
+        <hr />
+        <h1 id="title">Sarjat</h1>
+        <hr />
+      </section>
 
+      <section class="filter-movies">
+        <select class="filter" id="filter" onchange="FilterMovie()">
+          <option>All</option>
+          <option>Comedy</option>
+          <option>Fantasy</option>
+          <option>Drama</option>
+          <option>Adventure</option>
+        </select>
+      </section>
+
+      <section class="sarjat">
+        <figure class="sarja-item one-sarja Comedy">
+          <section class="katso-container">
+            <a href="" class="katso" id="sarja-item-1" onclick="ShowSarjaBox(this); return false;">Katso <i class="fa-solid fa-eye"></i></a>
+          </section>
+          <img src="../img/sarja1.jpeg" alt="" />
+        </figure>
+        <figure class="sarja-item two-sarja Drama">
+          <a href="" class="katso" id="sarja-item-2" onclick="ShowSarjaBox(this); return false;">Katso <i class="fa-solid fa-eye"></i></a>
+          <img src="../img/sarja2.jpeg" alt="" />
+        </figure>
+        <figure class="sarja-item three-sarja Fantasy Adventure">
+          <a href="" class="katso" id="sarja-item-3" onclick="ShowSarjaBox(this); return false;">Katso <i class="fa-solid fa-eye"></i></a>
+          <img src="../img/sarja3.jpeg" alt="" />
+        </figure>
+        <figure class="sarja-item four-sarja Adventure">
+          <a href="" class="katso" id="sarja-item-4" onclick="ShowSarjaBox(this); return false;">Katso <i class="fa-solid fa-eye"></i></a>
+          <img src="../img/sarja4.jpeg" alt="" />
+        </figure>
+        <figure class="sarja-item five-sarja Fantasy Adventure">
+          <a href="" class="katso" id="sarja-item-5" onclick="ShowSarjaBox(this); return false;">Katso <i class="fa-solid fa-eye"></i></a>
+          <img src="../img/sarja5.jpeg" alt="" />
+        </figure>
+        <figure class="sarja-item six-sarja Drama">
+          <a href="" class="katso" id="sarja-item-6" onclick="ShowSarjaBox(this); return false;">Katso <i class="fa-solid fa-eye"></i></a>
+          <img src="../img/sarja6.jpeg" alt="" />
+        </figure>
+        <figure class="sarja-item seven-sarja Comedy Drama">
+          <a href="" class="katso" id="sarja-item-7" onclick="ShowSarjaBox(this); return false;">Katso <i class="fa-solid fa-eye"></i></a>
+          <img src="../img/sarja7.jpeg" alt="" />
+        </figure>
+        <figure class="sarja-item eight-sarja Fantasy">
+          <a href="" class="katso" id="sarja-item-8" onclick="ShowSarjaBox(this); return false;">Katso <i class="fa-solid fa-eye"></i></a>
+          <img src="../img/sarja8.jpeg" alt="" />
+        </figure>
+        <figure class="sarja-item nine-sarja Fantasy Adventure">
+          <a href="" class="katso" id="sarja-item-9" onclick="ShowSarjaBox(this); return false;">Katso <i class="fa-solid fa-eye"></i></a>
+          <img src="../img/sarja9.jpeg" alt="" />
+        </figure>
+        <figure class="sarja-item ten-sarja Fantasy Adventure">
+          <a href="" class="katso" id="sarja-item-10" onclick="ShowSarjaBox(this); return false;">Katso <i class="fa-solid fa-eye"></i></a>
+          <img src="../img/sarja10.jpeg" alt="" />
+        </figure>
+        <figure class="sarja-item eleven-sarja Drama">
+          <a href="" class="katso" id="sarja-item-11" onclick="ShowSarjaBox(this); return false;">Katso <i class="fa-solid fa-eye"></i></a>
+          <img src="../img/sarja11.jpeg" alt="" />
+        </figure>
+        <figure class="sarja-item twelve-sarja Comedy Fantasy">
+          <a href="" class="katso" id="sarja-item-12" onclick="ShowSarjaBox(this); return false;">Katso <i class="fa-solid fa-eye"></i></a>
+          <img src="../img/sarja12.jpeg" alt="" />
+        </figure>
+      </section>
+
+      <section class="sarja-box" id="sarja-box-1">
+        <iframe width="950" height="534" src="https://www.youtube.com/embed/v14PWuURC7Y?list=PLnS-KSZtIXlH8YNow_rTIflrX6ZEF1uNd" title="Friends: Rachel Runs Out on her Wedding to Barry (Season 1 Clip) | TBS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <i class="fa-solid fa-rectangle-xmark" onclick="CloseSarja()"></i>
+      </section>
+      <section class="sarja-box" id="sarja-box-2">
+        <iframe width="950" height="534" src="https://www.youtube.com/embed/xCKS43qf-q4" title="House MD S01E01 Part 1/10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <i class="fa-solid fa-rectangle-xmark" onclick="CloseSarja()"></i>
+      </section>
+      <section class="sarja-box" id="sarja-box-3">
+        <iframe width="950" height="553" src="https://www.youtube.com/embed/FHQImwADH4A" title="Dad's on a hunting trip. Supernatural, Season 1-Episode 1." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <i class="fa-solid fa-rectangle-xmark" onclick="CloseSarja()"></i>
+      </section>
+      <section class="sarja-box" id="sarja-box-4">
+        <iframe width="950" height="534" src="https://www.youtube.com/embed/-aOpIcaYFoM" title="Castle Season 1 Episode 1 Part 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <i class="fa-solid fa-rectangle-xmark" onclick="CloseSarja()"></i>
+      </section>
+      <section class="sarja-box" id="sarja-box-5">
+        <iframe width="812" height="609" src="https://www.youtube.com/embed/xTsJVU-E-BM" title="Warehouse 13 - S1 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <i class="fa-solid fa-rectangle-xmark" onclick="CloseSarja()"></i>
+      </section>
+      <section class="sarja-box" id="sarja-box-6">
+        <iframe width="950" height="534" src="https://www.youtube.com/embed/85z53bAebsI" title="Suits: Season 1 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <i class="fa-solid fa-rectangle-xmark" onclick="CloseSarja()"></i>
+      </section>
+      <section class="sarja-box" id="sarja-box-7">
+        <iframe width="950" height="534" src="https://www.youtube.com/embed/rFYNqmKdaoI" title="Why Women Kill | Official Trailer | Paramount+" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <i class="fa-solid fa-rectangle-xmark" onclick="CloseSarja()"></i>
+      </section>
+      <section class="sarja-box" id="sarja-box-8">
+        <iframe width="950" height="534" src="https://www.youtube.com/embed/gcTkNV5Vg1E" title="Game of Thrones: Season 1 Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <i class="fa-solid fa-rectangle-xmark" onclick="CloseSarja()"></i>
+      </section>
+      <section class="sarja-box" id="sarja-box-9">
+        <iframe width="950" height="534" src="https://www.youtube.com/embed/WkT9UR85CjY?list=PLZA9xTwRxhYxHb-lxXYQ03Z90ewX9BTrO" title="Stargate Atlantis - Beckett's Drone Attack (Episode 1)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <i class="fa-solid fa-rectangle-xmark" onclick="CloseSarja()"></i>
+      </section>
+      <section class="sarja-box" id="sarja-box-10">
+        <iframe width="950" height="534" src="https://www.youtube.com/embed/Z-efNb5GXYM" title="1. Season 1. Episode 1.Part  (Wolf Moon) Teen Wolf" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <i class="fa-solid fa-rectangle-xmark" onclick="CloseSarja()"></i>
+      </section>
+      <section class="sarja-box" id="sarja-box-11">
+        <iframe width="950" height="534" src="https://www.youtube.com/embed/ENgUqCqWYnk" title="How To Get Away with Murder" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <i class="fa-solid fa-rectangle-xmark" onclick="CloseSarja()"></i>
+      </section>
+      <section class="sarja-box" id="sarja-box-12">
+        <iframe width="950" height="534" src="https://www.youtube.com/embed/X4bF_quwNtw" title="Official Trailer | Season 1 | LUCIFER" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <i class="fa-solid fa-rectangle-xmark" onclick="CloseSarja()"></i>
+      </section>
+
+
+      <hr />
+
+      <footer class="footer">
+        <section class="teaterista">
+          <h3>Teaterista</h3>
+          <ul class="teateristaUl">
+            <li><a href="">Teatterit</a></li>
+            <li><a href="">Yrityksille</a></li>
+            <li><a href="">Työpaikat</a></li>
+            <li><a href="">Oiva-raportit</a></li>
+            <li><a href="">Yhteiskuntavastuu</a></li>
+          </ul>
+        </section>
+
+        <section class="linkki">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-regular fa-envelope"></i>
+        </section>
+
+        <section class="asiakaspalvelu">
+          <h3>Asiakaspalvelu</h3>
+          <ul class="asiakaspalveluUl">
+            <li><a href="">Ota yhteyttä</a></li>
+            <li><a href="">Usein kysyttyä</a></li>
+            <li><a href="">Maksaminen ja maksutavat</a></li>
+            <li><a href="">Elokuvapaneeli</a></li>
+          </ul>
+        </section>
+      </footer>
+    </section>
+    <script src="./script-all-movies.js"></script>
+  </body>
 </html>
+  

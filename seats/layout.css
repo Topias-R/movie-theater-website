@@ -1,0 +1,318 @@
+body {
+  background-color: black;
+}
+
+.seat-selection {
+  display: grid;
+  grid-template-columns: 250px 1fr 250px;
+  grid-template-rows: 1fr;
+  margin: 2rem auto;
+}
+
+.seats {
+  display: grid;
+  grid-template-columns: repeat(9, 2rem);
+  grid-template-rows: 0.5rem repeat(5, 2rem);
+  gap: 4px 4px;
+  justify-self: center;
+  height: min-content;
+}
+
+.movie-screen {
+  grid-column: 2 / 9;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+}
+
+input[type="checkbox"] + span {
+}
+
+input[type="checkbox"] + span:before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: green;
+}
+
+input[type="checkbox"]:checked + span:before {
+  background-color: yellow;
+}
+
+input[type="checkbox"]:focus + span:before {
+  outline: 2px dotted #aaa;
+}
+
+input[type="checkbox"]:disabled + span:before {
+  background-color: red;
+}
+
+input[type="checkbox"]:not(:disabled) + span:hover:before {
+  text-shadow: 0 1px 2px #77f;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+label:nth-child(n + 2):nth-child(-n + 10) {
+  grid-row-start: 3;
+}
+
+label:nth-child(n + 11):nth-child(-n + 19) {
+  grid-row-start: 4;
+}
+
+label:nth-child(n + 20):nth-child(-n + 28) {
+  grid-row-start: 5;
+}
+
+label:nth-child(n + 29):nth-child(-n + 37) {
+  grid-row-start: 6;
+}
+
+.seats-list {
+  list-style: square;
+  list-style-position: inside;
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.title {
+  display: flex;
+}
+
+.title > * {
+  flex-grow: 1;
+}
+
+#time {
+  font-size: 1.2rem;
+}
+
+#title {
+  font-size: 2rem;
+  color: blueviolet;
+  text-align: center;
+}
+
+.buy-button {
+  background: linear-gradient(blueviolet, blue);
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin: 1rem;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.movie-title {
+  display: flex;
+}
+
+.movie-info {
+  width: 100%;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+}
+
+.movie-info h1 {
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.movie-info-item {
+  display: flex;
+}
+
+.movie-info-item > * {
+  flex-basis: 50%;
+  padding: 1rem;
+}
+
+hr {
+  background-color: white;
+}
+
+.btn {
+  border: 1px solid blueviolet;
+  border-radius: 5rem;
+  color: blueviolet;
+  padding: 10px;
+  margin: 1rem;
+}
+
+.btnClose {
+  display: none;
+}
+
+.video {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+}
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  font-family: Poppins;
+}
+
+.menuImg:hover {
+  color: blueviolet;
+}
+
+.menu li:hover {
+  cursor: pointer;
+}
+
+.menu a:hover {
+  color: blueviolet;
+}
+
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+}
+
+.menu li {
+  list-style-type: none;
+  margin: 0 3%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  margin-top: 2rem;
+  display: flex;
+  font-size: 1rem;
+  color: gray;
+}
+
+.footer > * {
+  flex-grow: 1;
+}
+
+.footer a {
+  font-size: 1rem;
+  color: gray;
+}
+
+.footer li:hover {
+  cursor: pointer;
+}
+
+.footer a:hover {
+  color: blueviolet;
+}
+
+.footer i {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.footer h3 {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.teaterista,
+.linkki,
+.asiakaspalvelu {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.linkki {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 864px) {
+  .seat-selection {
+    display: grid;
+    grid-template-rows: max-content max-content;
+    grid-template-columns: 1fr;
+    margin: 2rem auto;
+  }
+
+  .movie-image {
+    display: none;
+  }
+
+  .seat-info {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .container {
+    width: 90%;
+  }
+
+  .menu {
+    display: none;
+    font-size: 0.8rem;
+  }
+
+  .menuImg {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .footer a {
+    font-size: 0.8rem;
+  }
+
+  .linkki {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer h3 {
+    font-size: 0.8rem;
+  }
+}

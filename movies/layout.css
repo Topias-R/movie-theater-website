@@ -1,0 +1,410 @@
+body{
+    background-color: black;
+}
+.container{
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Poppins;
+}
+
+.header{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+}
+
+.menuImg:hover{
+    color: blueviolet;
+}
+
+.menu li{
+    list-style-type: none;
+    margin: 0 3%;
+    text-align: center;
+}
+
+.menu li:hover{
+    cursor: pointer;
+}
+
+.menu a:hover{
+    color: blueviolet;
+}
+
+.footer li:hover{
+    cursor: pointer;
+}
+
+.footer a:hover{
+    color: blueviolet;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.title{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.title > *{
+    flex-grow: 1;
+}
+
+#title{
+    font-size:2rem;
+    color: blueviolet;
+    text-align: center;
+}
+
+.slider-container {
+    width: 1000px;
+    height: 375px;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Лента с фото, имеет неограниченную ширину и тип flex, чтобы картинки не переносились */
+.slider-track {
+    height:375px;
+    display: flex;
+    transition-duration: .5s;
+    }
+
+/* Стили для оформления кнопок prev/next */
+.arrow {
+    width:7px;
+    height:7px;
+    border-top:#cacaca 3px solid;
+    border-right:#cacaca 3px solid;
+    position: absolute;
+}
+.arrow-bg {
+    width:30px;
+    height:30px;
+    background: #fff;
+    box-shadow: 0 0 4px 2px rgba(0,0,0,.2);
+    border-radius: 50%;
+    position: relative;
+    opacity: .8;
+    cursor: pointer;
+}
+.arrow-left .arrow {
+    transform: rotate(-135deg);
+    top:10px;
+    left:12px;
+}
+.arrow-right .arrow {
+    transform: rotate(45deg);
+    top:10px;
+    left:8px;
+}
+.arrow-left {
+    position: absolute;
+    top:50%;
+    left:10px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.arrow-right {
+    position: absolute;
+    top:50%;
+    right:10px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.slider-item{
+    width: 250px;
+}
+
+.btn{
+    border: 1px solid blueviolet;
+    border-radius: 5rem;
+    color: blueviolet;
+    padding: 10px;
+    margin: 1rem;
+}
+
+.btnOsta{
+    background: linear-gradient(blueviolet, blue);
+    border: none;
+    color: white;
+}
+
+.btnClose{
+    display: none;
+}
+
+.video{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+   
+}
+
+.video-item{
+    width: 966px; 
+    height: 543px;
+}
+
+.movie-title{
+    display: flex;
+}
+
+.movie-info{
+    width: 100%;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+}
+
+.movie-info h1{
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.buttonList{
+    display: flex;
+}
+
+.movie-info-item{
+    display: flex;
+}
+
+.movie-info-item > *{
+    flex-basis: 50%;
+    padding: 1rem;
+}
+
+.movie-taulu{
+    margin-left: 1rem;
+    margin: 1rem;
+}
+
+.movie-taulu a{
+    background: linear-gradient(blue, blueviolet);
+    color: white;
+    border-radius: 5rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.banneri{
+    background-color: black;
+    display: block;
+}
+
+.banneri img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+hr{
+    background-color:  white;
+}
+
+
+.footer{
+    margin-top: 2rem;
+    display: flex;
+    font-size: 1rem;
+    color: gray;
+}
+
+.footer > *
+{
+    flex-grow: 1;
+}
+
+.footer a{
+    font-size: 1rem;
+    color: gray;
+}
+
+.footer i{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.footer h3{
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.teaterista, .linkki, .asiakaspalvelu{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.linkki{
+    font-size: 1.5rem;
+}
+
+
+
+@media only screen and (max-width: 1250px) {
+    .container{
+        width: 90%;
+    }
+    
+    .slider-container {
+        width: 705px;
+        height: 350px;
+    }    
+
+    .slider-container img{
+        height: 350px;
+    }
+
+    .video-item{
+        width: 800px; 
+        height: 448px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
+    
+
+    .slider-container {
+        width: 600px;
+        height: 300px;
+    }    
+
+    .slider-container img{
+        height: 300px;
+    }
+
+    .video-item{
+        width: 600px; 
+        height: 336px;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .container{
+        width: 90%;
+    }
+
+    .menu{
+        display: none;
+        font-size: 0.8rem;
+    }
+
+    .menuImg{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #title{
+        font-size: 1.4rem;
+    }
+
+    .slider-container{
+        width: 330px;
+        height: 250px;
+    }
+
+    .slider-track img{
+        height: 250px;
+    }    
+
+    .movie-title{
+        display: block;
+    }
+
+    .movie-title h1{
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .btn{
+        padding: 5px;
+        margin: 0.5rem;
+        height: 1rem;
+        width: min-content;
+        font-size: 0.7rem;
+    }
+    
+    .btnOsta{
+        background-color:blueviolet;
+        border: none;
+        color: white;
+        width: max-content;
+        font-size: 0.7rem;
+        border: 1px solid white;
+    }
+    
+    .btnClose{
+        display: none;
+    }
+    
+    .video-item{
+        width: 250px; 
+        height: 140px;
+    }
+
+    .movie-taulu{
+    margin-left: 0.5rem;
+    }
+
+    .movie-taulu a{
+        font-size: 0.7rem;
+    }
+
+    .movie-info-item{
+        font-size: 0.8rem;
+        display: block;
+    }
+
+    .movie-info-item p{
+        padding: 0.5rem;
+    }
+
+    .footer{
+        display: block;
+    }
+
+    .footer a{
+        font-size: 0.8rem;
+    }
+
+    .linkki{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer h3{
+        font-size: 0.8rem;
+    }
+}
+
