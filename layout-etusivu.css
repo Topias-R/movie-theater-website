@@ -32,6 +32,10 @@ body {
     color: blueviolet;
 }
 
+.logoImg{
+    max-height: 40px;
+}
+
 .header{
     display: flex;
     flex-wrap: nowrap;

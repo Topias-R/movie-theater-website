@@ -73,6 +73,10 @@ a{
     text-align: center;
 }
 
+.logoImg{
+    max-height: 40px;
+}
+
 .slider-container {
     width: 1000px;
     height: 375px;
