@@ -59,6 +59,8 @@ a{
 
 .title{
     display: flex;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .title > *{
