@@ -11,12 +11,9 @@ body{
     font-family: Poppins;
 }
 
-.menuImg:hover{
-    color: fuchsia;
-}
 
 .menuImg{
-    color: white;
+    color: black;
 }
 
 .menu li:hover{
@@ -35,6 +32,9 @@ body{
     padding-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .menu{
@@ -112,11 +112,17 @@ a{
     .container{
         width: 90%;
     }
+    .menuImg{
+        color: black;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .container{
         width: 90%;
+    }
+    .menuImg{
+        color: black;
     }
 }
 
@@ -131,9 +137,15 @@ a{
     }
 
     .menuImg{
+        color: white;
         margin-left: auto;
         margin-right: auto;
     }
+
+    .menuImg:hover{
+        color: fuchsia;
+    }
+    
 
     .footer{
         display: block;
