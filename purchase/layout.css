@@ -20,3 +20,7 @@
 hr {
   background-color: white;
 }
+
+.logoImg {
+  max-height: 40px;
+}
