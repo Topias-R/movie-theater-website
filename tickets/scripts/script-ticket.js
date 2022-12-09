@@ -101,7 +101,19 @@ function FuncTotal() {
     } else {
       kiitos.style.display = "block";
     }
-  
+  }
+
+
+
+function KiitosOstosta (){
+    var kiitoslippuosto = document.getElementById("lippu-osto-kiitos"); 
+
+    if (kiitoslippuosto.style.display === "block") {
+      kiitoslippuosto.style.display = "none";
+    } else {
+      kiitoslippuosto.style.display = "block";
+    }
+}
 
     /*
     if (empt == "")
@@ -117,7 +129,7 @@ function FuncTotal() {
     */
 
 
-  }
+
 
 
 /*

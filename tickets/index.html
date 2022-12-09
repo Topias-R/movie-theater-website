@@ -94,13 +94,22 @@
             
             <section class="lippu-osto">
             <input type="number" readonly min="1" max="5" step="1" value="1" id="lippucount" onchange="FuncTotal()">
-            <button class="button" >Osta <i class="fa-solid fa-arrow-right-long"></i></button>  
+            <button class="button" onclick="KiitosOstosta()">Osta <i class="fa-solid fa-arrow-right-long"></i></button>  
             </section>
-
-
+            <br>
+            
             <p class="fontti">
-                <span id="output"></span>
-                 </p>
+              <span id="output"></span>
+               </p>
+<br>
+           <section id="lippu-osto-kiitos">
+            <h1 class="hooyks">Kiitos</h1>
+            <figure id="qrcode"><img src="../img/qr.png"></figure>
+            Kiitos! Pääset maksamaan liput oheisesta linkistä.<br>
+           </section>   
+           <br>
+
+
 
 <!--
             <p class="fontti" ><a href="">Liity kanta-asiakkaaksi <i class="fa-solid fa-arrow-right-long"></i></a></p>
@@ -111,9 +120,7 @@
                   
                     <article id="kantisLomake">
                     Liity kanta-asiakkaaksi ja ota edut heti käyttöösi!<br>
-                    <p class="fontti">
-                        <span id="output"></span>
-                         </p>
+    
                         
                         <label for="fname"></label>
                         <input type="text" id="fname" name="firstname" placeholder="Etunimi..">
