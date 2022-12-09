@@ -2,7 +2,7 @@ body {
   background-color: black;
 }
 
-.logoImg{
+.logoImg {
   max-height: 40px;
 }
 
@@ -318,5 +318,31 @@ a {
 
   .footer h3 {
     font-size: 0.8rem;
+  }
+}
+
+.video-item {
+  width: 966px;
+  height: 543px;
+}
+
+@media only screen and (max-width: 1250px) {
+  .video-item {
+    width: 800px;
+    height: 448px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .video-item {
+    width: 600px;
+    height: 336px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .video-item {
+    width: 250px;
+    height: 140px;
   }
 }
